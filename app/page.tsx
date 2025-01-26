@@ -1,6 +1,7 @@
 import downloadIcon from "./assets/download_icon.svg";
 import viewIcon from "./assets/eye_icon.svg";
 import MainButton from "./components/MainButton";
+import Socials from "./components/Socials";
 
 export default function Home() {
 	return (
@@ -11,7 +12,9 @@ export default function Home() {
 					<h2 className='font-semibold text-2xl'>
 						Full Stack Software Engineer
 					</h2>
+
 					<div className='p-[2%]'></div>
+
 					<div className='text-text_secondary space-y-3 lg:text-xl text-md'>
 						<div>
 							I'm a Full Stack Software Engineer with a Bachelor's
@@ -28,14 +31,14 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className='p-[10%]'></div>
+					<div className='p-[2%]'></div>
 
 					<div className='flex space-x-[5%]'>
 						<MainButton
 							href='./George-Nakashyan-Resume.pdf'
 							iconURL={viewIcon}
 						>
-							View my Resume
+							View Resume
 						</MainButton>
 						<MainButton
 							href='./George-Nakashyan-Resume.pdf'
@@ -47,8 +50,8 @@ export default function Home() {
 					</div>
 
 					<div className='p-[10%]'></div>
-					<h2>Contact me at:</h2>
-					<div>add links here</div>
+
+					<Socials />
 				</div>
 			</header>
 			<main className='pt-24 lg:w-[50%] lg:py-24'>
