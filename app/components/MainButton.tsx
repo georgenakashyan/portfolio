@@ -21,6 +21,8 @@ const MainButton = ({ children, iconURL, href, download }: MainButtonProps) => {
 						src={iconURL}
 						alt=''
 						className='max-w-6 max-y-6'
+						width={100}
+						height={100}
 						style={{
 							filter: "invert(100%) sepia(0%) saturate(0%) hue-rotate(321deg) brightness(111%) contrast(101%)",
 						}}

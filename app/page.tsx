@@ -1,5 +1,3 @@
-import downloadIcon from "./assets/download_icon.svg";
-import viewIcon from "./assets/eye_icon.svg";
 import MainButton from "./components/MainButton";
 import Socials from "./components/Socials";
 
@@ -36,13 +34,13 @@ export default function Home() {
 					<div className='flex space-x-[5%]'>
 						<MainButton
 							href='./George-Nakashyan-Resume.pdf'
-							iconURL={viewIcon}
+							iconURL='./assets/eye_icon.svg'
 						>
 							View Resume
 						</MainButton>
 						<MainButton
 							href='./George-Nakashyan-Resume.pdf'
-							iconURL={downloadIcon}
+							iconURL='./assets/download_icon.svg'
 							download={true}
 						>
 							Download Resume
