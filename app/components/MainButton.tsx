@@ -11,7 +11,7 @@ interface MainButtonProps {
 const MainButton = ({ children, iconURL, href, download }: MainButtonProps) => {
 	return (
 		<a
-			href={download ? undefined : href}
+			href={href}
 			download={download ? true : undefined}
 			className='bg-secondary_light hover:bg-secondary text-white font-bold py-2 px-4 rounded-full select-none'
 		>
