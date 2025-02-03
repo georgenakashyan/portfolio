@@ -27,7 +27,7 @@ const Socials = () => {
 					}}
 				/>
 			</a>
-			<a href='mailto:georgenakashyan@gmail.com'>
+			<a href={`mailto:${process.env.myEmail}`}>
 				<Image
 					src='./assets/email_icon.svg'
 					alt='Email me'
