@@ -4,9 +4,9 @@ import Socials from "./components/Socials";
 
 export default function Home() {
 	return (
-		<div className='mx-[15%] flex lg:flex-row flex-col max-h-full text-text_primary'>
-			<header className='lg:sticky lg:top-0 flex lg:w-[50%] flex-col justify-between py-24'>
-				<div className='lg:min-h-full lg:space-y-3 lg:pr-[20%] pr-[0%] min-w-full'>
+		<div className='xl:mx-[15%] lg:mx-[10%] mx-[5%] flex xl:flex-row flex-col max-h-full text-text_primary'>
+			<header className='xl:sticky xl:top-0 flex xl:w-[50%] flex-col justify-between py-24'>
+				<div className='xl:min-h-full xl:space-y-3 xl:pr-[20%] pr-[0%] min-w-full'>
 					<h1 className='font-semibold text-5xl'>George Nakashyan</h1>
 					<h2 className='font-semibold text-2xl'>
 						Full Stack Software Engineer
@@ -15,7 +15,7 @@ export default function Home() {
 
 					<div className='p-[2%]'></div>
 
-					<div className='text-text_secondary space-y-3 lg:text-xl text-md'>
+					<div className='text-text_secondary space-y-3 text-xl'>
 						<div>
 							I'm a Full Stack Software Engineer with a Bachelor's
 							in Computer Science. I graduated with Summa Cum
@@ -54,7 +54,7 @@ export default function Home() {
 					<Socials />
 				</div>
 			</header>
-			<main className='pt-24 lg:w-[50%] lg:py-24 space-y-10'>
+			<main className='pt-24 xl:w-[50%] xl:py-24 space-y-10'>
 				<section className='space-y-4'>
 					<h1 className='font-semibold text-3xl space-y-10'>
 						Work Experience
