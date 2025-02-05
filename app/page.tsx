@@ -4,8 +4,8 @@ import Socials from "./components/Socials";
 
 export default function Home() {
 	return (
-		<div className='xl:mx-[10%] mx-[5%] flex xl:flex-row flex-col max-h-full text-text_primary'>
-			<header className='xl:sticky xl:top-0 flex xl:w-[50%] flex-col justify-between xl:py-24 py-10'>
+		<div className='xl:mx-[10%] mx-[5%] flex xl:flex-row space-y-20 flex-col max-h-full text-text_primary'>
+			<header className='xl:sticky xl:top-0 flex xl:w-[50%] flex-col justify-between xl:py-24 pt-12'>
 				<div className='xl:min-h-full space-y-4 xl:pr-[20%] pr-[0%] min-w-full'>
 					<h1 className='font-semibold text-4xl'>George Nakashyan</h1>
 					<h2 className='font-semibold text-xl'>
@@ -57,8 +57,8 @@ export default function Home() {
 					</div>
 				</div>
 			</header>
-			<main className='pt-24 xl:w-[50%] xl:py-24 space-y-10'>
-				<section className='space-y-4'>
+			<main className='xl:w-[50%] xl:py-24 pb-12 space-y-20'>
+				<section className='space-y-10'>
 					<h1 className='font-semibold text-3xl space-y-10'>
 						Work Experience
 					</h1>

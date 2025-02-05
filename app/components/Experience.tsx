@@ -17,7 +17,7 @@ const Experience = ({
 }: ExperienceProps) => {
 	return (
 		<div className='flex xl:flex-row flex-col xl:-m-6 xl:p-6 xl:space-x-10 border border-background rounded-3xl hover:bg-opacity-5 hover:bg-slate-200 transition'>
-			<div className='text-sm pt-1 min-w-fit text-text_secondary'>
+			<div className='text-sm py-2 min-w-fit text-text_secondary'>
 				{startDate} — {endDate}
 			</div>
 			<div className='flex-grow'>
