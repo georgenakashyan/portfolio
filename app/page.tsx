@@ -57,7 +57,7 @@ export default function Home() {
 					</div>
 				</div>
 			</header>
-			<main className='xl:w-[50%] xl:py-24 pb-12 space-y-20'>
+			<main className='xl:w-[50%] xl:pb-24 pb-12 space-y-20'>
 				<section className='space-y-10'>
 					<h1 className='font-semibold text-3xl space-y-10'>
 						Work Experience
