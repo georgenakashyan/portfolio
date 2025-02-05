@@ -16,11 +16,11 @@ const Experience = ({
 	description,
 }: ExperienceProps) => {
 	return (
-		<div className='grid grid-cols-10 grid-rows-1 -m-6 p-6 space-x-10 border border-background rounded-3xl hover:bg-opacity-5 hover:bg-slate-200 transition'>
-			<div className='col-span-3 text-sm pt-1 min-w-fit text-text_secondary'>
+		<div className='flex xl:flex-row flex-col xl:-m-6 xl:p-6 xl:space-x-10 border border-background rounded-3xl hover:bg-opacity-5 hover:bg-slate-200 transition'>
+			<div className='text-sm pt-1 min-w-fit text-text_secondary'>
 				{startDate} — {endDate}
 			</div>
-			<div className='col-span-7'>
+			<div className='flex-grow'>
 				<p className='text-xl font-semibold'>{position}</p>
 				<p className='text-lg'>{company}</p>
 				<p className='text-md'>{location}</p>

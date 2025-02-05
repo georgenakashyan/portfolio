@@ -4,24 +4,27 @@ import Socials from "./components/Socials";
 
 export default function Home() {
 	return (
-		<div className='xl:mx-[15%] lg:mx-[10%] mx-[5%] flex xl:flex-row flex-col max-h-full text-text_primary'>
-			<header className='xl:sticky xl:top-0 flex xl:w-[50%] flex-col justify-between py-24'>
-				<div className='xl:min-h-full xl:space-y-3 xl:pr-[20%] pr-[0%] min-w-full'>
-					<h1 className='font-semibold text-5xl'>George Nakashyan</h1>
-					<h2 className='font-semibold text-2xl'>
+		<div className='xl:mx-[10%] mx-[5%] flex xl:flex-row flex-col max-h-full text-text_primary'>
+			<header className='xl:sticky xl:top-0 flex xl:w-[50%] flex-col justify-between xl:py-24 py-10'>
+				<div className='xl:min-h-full space-y-4 xl:pr-[20%] pr-[0%] min-w-full'>
+					<h1 className='font-semibold text-4xl'>George Nakashyan</h1>
+					<h2 className='font-semibold text-xl'>
 						Full Stack Software Engineer
 					</h2>
 					<h3 className='text-lg !mt-0'>Based in New York</h3>
 
 					<div className='p-[2%]'></div>
 
-					<div className='text-text_secondary space-y-3 text-xl'>
+					<div className='text-text_secondary space-y-3 text-md'>
 						<div>
-							I'm a Full Stack Software Engineer with a Bachelor's
-							in Computer Science. I graduated with Summa Cum
-							Laude honors and the Academic Excellence Award. I am
-							currently doing freelance while open to work
-							positions.
+							I'm a{" "}
+							<span className='font-semibold'>
+								Full Stack Software Engineer
+							</span>{" "}
+							with a Bachelor's in Computer Science. I graduated
+							with Summa Cum Laude honors and the Academic
+							Excellence Award. I am currently doing freelance
+							while open to work positions.
 						</div>
 						<div>
 							I have experience building full stack web
@@ -30,6 +33,10 @@ export default function Home() {
 							Python with NetworkX and Matplotlib.
 						</div>
 					</div>
+
+					<div className='p-[2%]'></div>
+
+					<Socials />
 
 					<div className='p-[2%]'></div>
 
@@ -48,10 +55,6 @@ export default function Home() {
 							Download Resume
 						</MainButton>
 					</div>
-
-					<div className='p-[10%]'></div>
-
-					<Socials />
 				</div>
 			</header>
 			<main className='pt-24 xl:w-[50%] xl:py-24 space-y-10'>
