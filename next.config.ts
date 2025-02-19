@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
 	env: {
-		myEmail: "MY_EMAIL",
+		myEmail: process.env.MY_EMAIL,
 	},
 	/* config options here */
 };
