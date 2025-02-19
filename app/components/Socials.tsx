@@ -3,7 +3,10 @@ import Image from "next/image";
 const Socials = () => {
 	return (
 		<div className='flex flex-1 flex-row min-w-[100%] space-x-5'>
-			<a href='https://www.linkedin.com/in/george-nakashyan/'>
+			<a
+				href='https://www.linkedin.com/in/george-nakashyan/'
+				rel='noreferrer noopener'
+			>
 				<Image
 					src='./assets/linkedin_icon.svg'
 					alt='View my LinkedIn'
@@ -15,7 +18,10 @@ const Socials = () => {
 					}}
 				/>
 			</a>
-			<a href='https://github.com/georgenakashyan'>
+			<a
+				href='https://github.com/georgenakashyan'
+				rel='noreferrer noopener'
+			>
 				<Image
 					src='./assets/github_icon.svg'
 					alt='View my GitHub'
@@ -27,7 +33,10 @@ const Socials = () => {
 					}}
 				/>
 			</a>
-			<a href={`mailto:${process.env.myEmail}`}>
+			<a
+				href={`mailto:${process.env.myEmail}`}
+				rel='noreferrer noopener'
+			>
 				<Image
 					src='./assets/email_icon.svg'
 					alt='Email me'
