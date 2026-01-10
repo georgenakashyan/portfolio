@@ -1,9 +1,9 @@
-import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
 	env: {
-		myEmail: process.env.MY_EMAIL,
+		myEmail: process.env.NEXT_PUBLIC_MY_EMAIL,
 	},
 	// Configure `pageExtensions` to include MDX files
 	pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
