@@ -1,0 +1,166 @@
+---
+title: Prisoner's Dilemma Simulation
+description: Academic research project simulating game theory strategies on graph networks. Published in ASONAM 2023 conference proceedings with novel insights on cooperative behavior patterns.
+date: 2023
+category: Research
+techStack:
+  - Python
+  - NetworkX
+  - Matplotlib
+  - NumPy
+  - Pandas
+github: https://github.com/georgenakashyan/prisoners-dilemma
+image: /projects/prisoners-dilemma.png
+---
+
+## Overview
+
+This research project explores cooperative behavior in game theory through computational simulations of the iterated Prisoner's Dilemma on various network topologies. The work was conducted as part of academic research and published in the proceedings of the 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM).
+
+The project demonstrates expertise in scientific computing, algorithm implementation, data analysis, and academic research methodology, combining theoretical game theory with practical computational modeling.
+
+## The Challenge
+
+Understanding how cooperation emerges and persists in competitive environments is a fundamental question in economics, biology, and social science. The Prisoner's Dilemma is a classic game theory problem that models this tension between individual and collective incentives. Key research questions included:
+
+- **Network effects** - How does network structure influence the evolution of cooperative strategies?
+- **Strategy dynamics** - Which strategies emerge as dominant on different network topologies?
+- **Scalability** - How can we efficiently simulate thousands of iterations across large networks?
+- **Visualization** - How to effectively visualize strategy propagation and network evolution?
+- **Reproducibility** - Ensuring experiments are reproducible with proper randomization and parameter controls
+
+## The Solution
+
+The project implements a comprehensive simulation framework for studying the Prisoner's Dilemma on graph networks:
+
+### Simulation Architecture
+
+- **NetworkX** for graph creation, manipulation, and analysis
+- **Object-oriented design** with separate classes for players, strategies, and games
+- **Configurable parameters** for payoff matrices, network sizes, and iteration counts
+- **Batch processing** for running multiple trials with different parameters
+- **Data export** to CSV and JSON for analysis in external tools
+
+### Network Topologies Studied
+
+The research examined behavior across multiple network types:
+
+- **Complete graphs** - Every node connected to every other node (baseline)
+- **Random graphs** - Erdős–Rényi random networks with varying edge probabilities
+- **Small-world networks** - Watts-Strogatz networks with high clustering
+- **Scale-free networks** - Barabási–Albert preferential attachment networks
+- **Grid networks** - 2D lattice structures with local neighborhood interactions
+
+### Strategy Implementation
+
+Multiple classic game theory strategies were implemented:
+
+- **Always Cooperate** - Always chooses cooperation regardless of opponent behavior
+- **Always Defect** - Always defects to maximize individual payoff
+- **Tit-for-Tat** - Mirrors opponent's previous move (proven effective in tournaments)
+- **Generous Tit-for-Tat** - Occasionally forgives defections to break revenge cycles
+- **Pavlov (Win-Stay-Lose-Shift)** - Adapts based on payoff outcomes
+- **Random** - Randomly chooses cooperation or defection (control strategy)
+
+## Key Features
+
+### Flexible Simulation Engine
+
+The core simulation engine supports customizable payoff matrices, allowing researchers to modify the incentive structure and study different game scenarios. Parameters can be adjusted without code changes through configuration files.
+
+### Network Generation
+
+Built-in network generators create various topologies with configurable parameters like node count, average degree, clustering coefficient, and rewiring probability.
+
+### Evolution Mechanism
+
+After each round, strategies propagate through the network based on relative fitness. Nodes adopt successful neighbors' strategies with probability proportional to payoff differences, modeling evolutionary selection.
+
+### Comprehensive Metrics
+
+The system tracks multiple metrics over time:
+
+- Cooperation rate across the entire network
+- Strategy distribution and diversity
+- Average payoffs per strategy type
+- Clustering of cooperative vs. defecting nodes
+- Network statistics (degree distribution, clustering coefficient)
+
+### Visualization Tools
+
+Matplotlib integration provides rich visualizations:
+
+- Network graphs with nodes colored by strategy type
+- Time series plots showing cooperation rate evolution
+- Heatmaps of strategy success across network positions
+- Histogram distributions of payoffs and degrees
+- Animated visualizations showing strategy propagation over time
+
+### Statistical Analysis
+
+NumPy and Pandas enable rigorous statistical analysis:
+
+- Aggregation across multiple simulation runs
+- Confidence interval calculations
+- Hypothesis testing for strategy performance differences
+- Correlation analysis between network properties and outcomes
+
+## Results & Impact
+
+The research produced several significant findings:
+
+### Network Structure Matters
+
+Cooperation rates varied dramatically across network topologies. Small-world networks showed higher sustained cooperation compared to random networks, while scale-free networks exhibited interesting hub dynamics where highly connected nodes disproportionately influenced outcomes.
+
+### Strategy Dominance Patterns
+
+Tit-for-Tat and Generous Tit-for-Tat emerged as robust strategies across most network types, confirming theoretical predictions. However, scale-free networks showed surprising resilience of Always Defect strategies when concentrated in hub nodes.
+
+### Clustering Effects
+
+Local clustering in the network topology promoted cooperative clusters that could resist invasion by defecting strategies, supporting theories about the importance of community structure in sustaining cooperation.
+
+### Publication
+
+The work was published in ASONAM 2023 conference proceedings, contributing to the academic understanding of network effects in game theory and evolutionary dynamics.
+
+## Technical Highlights
+
+### Efficient Graph Operations
+
+The implementation optimizes graph traversals and neighbor queries using NetworkX's built-in data structures, enabling simulations of networks with thousands of nodes across thousands of iterations.
+
+### Reproducible Research
+
+All experiments use seeded random number generators and version-controlled parameter files, ensuring complete reproducibility of results. The codebase includes documentation of the experimental protocol.
+
+### Modular Design
+
+The codebase uses object-oriented design with clear separation of concerns:
+
+- Strategy classes implement a common interface for easy extension
+- Network generators are modular and reusable
+- Visualization functions are decoupled from simulation logic
+- Data collection happens independently from game execution
+
+### Performance Optimization
+
+Critical sections use NumPy vectorized operations instead of Python loops, achieving 10-100x speedups for large networks. Batch processing allows parallel execution of independent trials.
+
+### Data Pipeline
+
+Simulation outputs are structured for easy ingestion into analysis pipelines, with standardized CSV formats and metadata files describing experimental parameters.
+
+## Academic Contributions
+
+This project demonstrates skills valuable in both research and industry:
+
+- Implementing algorithms from academic literature
+- Designing and executing computational experiments
+- Statistical analysis and hypothesis testing
+- Creating publication-quality visualizations
+- Writing clear documentation and research reports
+- Contributing to peer-reviewed academic literature
+
+The Prisoner's Dilemma simulation showcases the ability to translate theoretical concepts into working code, conduct rigorous scientific experiments, and communicate findings effectively—skills applicable to data science, research engineering, and technical leadership roles.
