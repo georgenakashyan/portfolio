@@ -4,14 +4,14 @@ description: Production-grade enterprise application built at Softworld, featuri
 date: 2024
 category: Full Stack
 techStack:
-  - Next.js
-  - PostgreSQL
-  - Drizzle ORM
-  - Zod
-  - Docker
-  - TypeScript
-  - Tailwind CSS
-image: /projects/enterprise-app.png
+    - Next.js
+    - PostgreSQL
+    - Drizzle ORM
+    - Zod
+    - Docker
+    - TypeScript
+    - Tailwind CSS
+image: /images/projects/enterprise-app.png
 ---
 
 ## Overview
@@ -24,12 +24,12 @@ This project demonstrates professional software engineering practices including 
 
 Enterprise applications have unique requirements that go beyond typical web development:
 
-- **Data isolation** - Multiple clients require strict data separation in a shared database
-- **Type safety** - Complex data models need end-to-end type safety from database to UI
-- **Performance** - Large datasets require optimization for queries and rendering
-- **Security** - Sensitive business data demands robust access control and validation
-- **Scalability** - Architecture must support growing data volumes and user bases
-- **Maintainability** - Code must be clear and well-documented for long-term maintenance
+-   **Data isolation** - Multiple clients require strict data separation in a shared database
+-   **Type safety** - Complex data models need end-to-end type safety from database to UI
+-   **Performance** - Large datasets require optimization for queries and rendering
+-   **Security** - Sensitive business data demands robust access control and validation
+-   **Scalability** - Architecture must support growing data volumes and user bases
+-   **Maintainability** - Code must be clear and well-documented for long-term maintenance
 
 ## The Solution
 
@@ -38,30 +38,33 @@ The application implements a modern, type-safe architecture using cutting-edge t
 ### Technology Stack
 
 **Frontend:**
-- **Next.js 14** with App Router for server-side rendering and optimal performance
-- **TypeScript** for complete type safety across the application
-- **Tailwind CSS** for consistent, maintainable styling
-- **React Server Components** for improved performance and reduced client bundle size
+
+-   **Next.js 14** with App Router for server-side rendering and optimal performance
+-   **TypeScript** for complete type safety across the application
+-   **Tailwind CSS** for consistent, maintainable styling
+-   **React Server Components** for improved performance and reduced client bundle size
 
 **Backend:**
-- **Next.js Server Actions** for type-safe, server-side mutations
-- **Drizzle ORM** for type-safe database queries and migrations
-- **Zod** for runtime validation and type inference
-- **PostgreSQL** with multi-schema architecture for data isolation
+
+-   **Next.js Server Actions** for type-safe, server-side mutations
+-   **Drizzle ORM** for type-safe database queries and migrations
+-   **Zod** for runtime validation and type inference
+-   **PostgreSQL** with multi-schema architecture for data isolation
 
 **DevOps:**
-- **Docker** for containerized development and deployment
-- **Environment-based** configuration for dev/staging/production
-- **CI/CD pipelines** for automated testing and deployment
+
+-   **Docker** for containerized development and deployment
+-   **Environment-based** configuration for dev/staging/production
+-   **CI/CD pipelines** for automated testing and deployment
 
 ### Multi-Schema Database Architecture
 
 The PostgreSQL database uses schema-based isolation to separate client data while maintaining a single database instance. Each client gets a dedicated schema with its own tables, allowing for:
 
-- **Data isolation** - Clients cannot access each other's data
-- **Schema evolution** - Clients can have different schema versions during migrations
-- **Cost efficiency** - Single database instance instead of multiple databases
-- **Unified queries** - Cross-schema analytics when authorized
+-   **Data isolation** - Clients cannot access each other's data
+-   **Schema evolution** - Clients can have different schema versions during migrations
+-   **Cost efficiency** - Single database instance instead of multiple databases
+-   **Unified queries** - Cross-schema analytics when authorized
 
 Drizzle ORM provides compile-time type safety for all database operations, with TypeScript types automatically generated from schema definitions.
 
@@ -80,11 +83,11 @@ This architecture eliminates entire classes of bugs by catching type errors at c
 
 A sophisticated permissions system controls access to uploaded files:
 
-- **Role-based access** - Users have roles that determine file access levels
-- **Ownership tracking** - Files are associated with uploaders and organizations
-- **Granular permissions** - Read, write, delete permissions assigned independently
-- **Secure URLs** - Temporary signed URLs for file downloads with expiration
-- **Audit logging** - All file access is logged for security compliance
+-   **Role-based access** - Users have roles that determine file access levels
+-   **Ownership tracking** - Files are associated with uploaders and organizations
+-   **Granular permissions** - Read, write, delete permissions assigned independently
+-   **Secure URLs** - Temporary signed URLs for file downloads with expiration
+-   **Audit logging** - All file access is logged for security compliance
 
 ## Key Features
 
@@ -92,67 +95,67 @@ A sophisticated permissions system controls access to uploaded files:
 
 Interactive dashboards provide real-time visibility into business metrics with:
 
-- Server-side data aggregation for optimal performance
-- Responsive charts and visualizations
-- Customizable filters and date ranges
-- Export functionality for reports
+-   Server-side data aggregation for optimal performance
+-   Responsive charts and visualizations
+-   Customizable filters and date ranges
+-   Export functionality for reports
 
 ### Data Management
 
 Comprehensive CRUD operations for business entities with:
 
-- Type-safe forms with Zod validation
-- Optimistic UI updates for responsive interactions
-- Bulk operations for efficiency
-- Advanced search and filtering
+-   Type-safe forms with Zod validation
+-   Optimistic UI updates for responsive interactions
+-   Bulk operations for efficiency
+-   Advanced search and filtering
 
 ### File Upload & Management
 
 Robust file handling system supporting:
 
-- Drag-and-drop upload interface
-- Progress tracking for large files
-- File type validation and size limits
-- Organization and tagging
-- Preview generation for images and documents
+-   Drag-and-drop upload interface
+-   Progress tracking for large files
+-   File type validation and size limits
+-   Organization and tagging
+-   Preview generation for images and documents
 
 ### User Management
 
 Complete user administration features:
 
-- Role-based access control (RBAC)
-- User invitation and onboarding
-- Activity tracking and audit logs
-- Password policies and security settings
+-   Role-based access control (RBAC)
+-   User invitation and onboarding
+-   Activity tracking and audit logs
+-   Password policies and security settings
 
 ### API Integration
 
 RESTful API endpoints for external integrations:
 
-- OpenAPI/Swagger documentation
-- API key authentication
-- Rate limiting and throttling
-- Webhook support for event notifications
+-   OpenAPI/Swagger documentation
+-   API key authentication
+-   Rate limiting and throttling
+-   Webhook support for event notifications
 
 ## Results & Impact
 
 The application successfully serves internal business operations with:
 
-- **Performance** - Sub-100ms response times for typical queries
-- **Reliability** - 99.9%+ uptime in production
-- **Security** - Zero security incidents, passing enterprise security audits
-- **Scalability** - Handles 10,000+ records per schema with consistent performance
-- **Maintainability** - Clean codebase with comprehensive documentation
+-   **Performance** - Sub-100ms response times for typical queries
+-   **Reliability** - 99.9%+ uptime in production
+-   **Security** - Zero security incidents, passing enterprise security audits
+-   **Scalability** - Handles 10,000+ records per schema with consistent performance
+-   **Maintainability** - Clean codebase with comprehensive documentation
 
 ### Professional Development
 
 This project provided invaluable experience in:
 
-- **Enterprise codebases** - Working with large, complex applications
-- **Team collaboration** - Code reviews, pair programming, knowledge sharing
-- **Best practices** - Following industry standards for testing, documentation, security
-- **Production operations** - Monitoring, debugging, incident response
-- **Business context** - Understanding how technical decisions impact business outcomes
+-   **Enterprise codebases** - Working with large, complex applications
+-   **Team collaboration** - Code reviews, pair programming, knowledge sharing
+-   **Best practices** - Following industry standards for testing, documentation, security
+-   **Production operations** - Monitoring, debugging, incident response
+-   **Business context** - Understanding how technical decisions impact business outcomes
 
 ## Technical Highlights
 
@@ -172,29 +175,29 @@ Strategic use of database indexes, query optimization, and caching reduces query
 
 Multiple layers of security including:
 
-- SQL injection prevention through parameterized queries
-- XSS protection via React's automatic escaping
-- CSRF tokens on all mutations
-- Content Security Policy headers
-- Secure session management
+-   SQL injection prevention through parameterized queries
+-   XSS protection via React's automatic escaping
+-   CSRF tokens on all mutations
+-   Content Security Policy headers
+-   Secure session management
 
 ### Docker Development Environment
 
 Docker Compose orchestrates local development with:
 
-- PostgreSQL database with automatic schema creation
-- Hot module reloading for rapid iteration
-- Environment variable management
-- Consistent environment across team members
+-   PostgreSQL database with automatic schema creation
+-   Hot module reloading for rapid iteration
+-   Environment variable management
+-   Consistent environment across team members
 
 ### Comprehensive Testing
 
 Testing strategy includes:
 
-- Unit tests for utility functions and validation logic
-- Integration tests for server actions and database operations
-- End-to-end tests for critical user flows
-- Visual regression testing for UI components
+-   Unit tests for utility functions and validation logic
+-   Integration tests for server actions and database operations
+-   End-to-end tests for critical user flows
+-   Visual regression testing for UI components
 
 ## Lessons Learned
 
@@ -218,10 +221,10 @@ Clear documentation and code comments made onboarding new team members faster an
 
 Planned improvements include:
 
-- Real-time collaboration features using WebSockets
-- Advanced analytics with machine learning insights
-- Mobile application for field operations
-- GraphQL API for more flexible client queries
-- Microservices architecture for independent scaling of components
+-   Real-time collaboration features using WebSockets
+-   Advanced analytics with machine learning insights
+-   Mobile application for field operations
+-   GraphQL API for more flexible client queries
+-   Microservices architecture for independent scaling of components
 
 This enterprise application showcases the ability to deliver production-grade software using modern tools and best practices, collaborate effectively in a professional environment, and contribute meaningfully to complex, business-critical systems.

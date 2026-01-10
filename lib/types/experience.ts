@@ -6,4 +6,5 @@ export interface Experience {
   location: string;
   description: string[];
   tech: string[];
+  logo?: string;
 }

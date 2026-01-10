@@ -22,6 +22,7 @@ export const experiences: Experience[] = [
 			"Docker",
 			"Tailwind CSS",
 		],
+		logo: "/images/logos/softworld.jpg",
 	},
 	{
 		company: "Freelance",
@@ -58,6 +59,7 @@ export const experiences: Experience[] = [
 			"Developed SQL-based staff directory system, enabling efficient search and filtering of employee information across departments",
 		],
 		tech: ["React", "JavaScript", "SQL", "HTML", "CSS", "Git"],
+		logo: "/images/logos/farmingdale.png",
 	},
 ];
 

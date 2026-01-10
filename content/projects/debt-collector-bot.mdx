@@ -4,13 +4,14 @@ description: Discord bot for financial tracking and debt management among friend
 date: 2023
 category: Backend
 techStack:
-  - Node.js
-  - Discord.js
-  - MongoDB
-  - JavaScript
-  - Express.js
+    - Node.js
+    - Discord.js
+    - MongoDB
+    - JavaScript
+    - Express.js
 github: https://github.com/georgenakashyan/DebtCollectorBot
-image: /projects/debt-collector.png
+demo: https://discord.com/oauth2/authorize?client_id=1403163880032829470
+image: /images/projects/debt-collector-bot.png
 ---
 
 ## Overview
@@ -23,11 +24,11 @@ Built with Node.js and Discord.js, this project demonstrates backend development
 
 Managing shared expenses and informal debts among friends is often awkward and inefficient. People forget who owes what, tracking happens across multiple platforms (text messages, notes apps, spreadsheets), and settling up becomes unnecessarily complicated. Key challenges included:
 
-- **Distributed tracking** - No centralized place to record and view debts within Discord servers
-- **Memory burden** - Users forgetting who owes money and how much
-- **Manual calculations** - No automatic balance calculations or debt simplification
-- **Poor visibility** - Difficult to see transaction history and verify records
-- **Reminder fatigue** - No automated system to prompt debt settlements
+-   **Distributed tracking** - No centralized place to record and view debts within Discord servers
+-   **Memory burden** - Users forgetting who owes money and how much
+-   **Manual calculations** - No automatic balance calculations or debt simplification
+-   **Poor visibility** - Difficult to see transaction history and verify records
+-   **Reminder fatigue** - No automated system to prompt debt settlements
 
 ## The Solution
 
@@ -35,19 +36,19 @@ DebtCollector Bot implements a comprehensive debt tracking system directly withi
 
 ### Bot Architecture
 
-- **Discord.js** framework for robust Discord API integration
-- **Command handler** system for organizing and managing bot commands
-- **Event listeners** for server joins, message reactions, and user interactions
-- **Slash commands** for modern Discord command interface
-- **Permission system** to control access to sensitive financial commands
+-   **Discord.js** framework for robust Discord API integration
+-   **Command handler** system for organizing and managing bot commands
+-   **Event listeners** for server joins, message reactions, and user interactions
+-   **Slash commands** for modern Discord command interface
+-   **Permission system** to control access to sensitive financial commands
 
 ### Database Design
 
-- **MongoDB** for flexible document storage of transactions and user balances
-- **User schema** storing Discord IDs, usernames, and balance information
-- **Transaction schema** recording debt details, timestamps, and settlement status
-- **Server-specific** data isolation to keep server finances separate
-- **Indexed queries** for fast balance lookups and transaction history
+-   **MongoDB** for flexible document storage of transactions and user balances
+-   **User schema** storing Discord IDs, usernames, and balance information
+-   **Transaction schema** recording debt details, timestamps, and settlement status
+-   **Server-specific** data isolation to keep server finances separate
+-   **Indexed queries** for fast balance lookups and transaction history
 
 ### Core Functionality
 
@@ -85,19 +86,19 @@ Advanced commands allow splitting bills among multiple users, automatically calc
 
 DebtCollector Bot has been successfully deployed in multiple Discord servers, providing:
 
-- **Reduced friction** in tracking informal debts among friends
-- **Increased accountability** through persistent, verifiable records
-- **Time savings** by automating manual calculations and record-keeping
-- **Improved relationships** by removing awkwardness from money discussions
+-   **Reduced friction** in tracking informal debts among friends
+-   **Increased accountability** through persistent, verifiable records
+-   **Time savings** by automating manual calculations and record-keeping
+-   **Improved relationships** by removing awkwardness from money discussions
 
 The project demonstrates key backend development competencies:
 
-- Building and deploying Node.js applications
-- Integrating with external APIs (Discord API)
-- Designing MongoDB schemas for relational-style data
-- Implementing command parsing and validation
-- Handling asynchronous operations and error cases
-- Writing maintainable, modular backend code
+-   Building and deploying Node.js applications
+-   Integrating with external APIs (Discord API)
+-   Designing MongoDB schemas for relational-style data
+-   Implementing command parsing and validation
+-   Handling asynchronous operations and error cases
+-   Writing maintainable, modular backend code
 
 ## Technical Highlights
 
@@ -125,10 +126,10 @@ The bot includes a test environment for development and uses a production deploy
 
 Potential future features include:
 
-- Web dashboard for visualizing debt networks and transaction history
-- Integration with payment platforms for actual money transfers
-- Support for different currencies and automatic conversion
-- Analytics showing spending patterns and debt trends
-- Scheduled automatic debt simplification across server members
+-   Web dashboard for visualizing debt networks and transaction history
+-   Integration with payment platforms for actual money transfers
+-   Support for different currencies and automatic conversion
+-   Analytics showing spending patterns and debt trends
+-   Scheduled automatic debt simplification across server members
 
 DebtCollector Bot showcases the ability to identify a real-world problem, design a technical solution, and implement it using modern backend technologies and best practices.
