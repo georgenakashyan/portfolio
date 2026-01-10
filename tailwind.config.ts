@@ -9,15 +9,23 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				background: "var(--background)",
-				foreground: "var(--foreground)",
-				primary_dark: "var(--gn-primary-dark)",
-				primary: "var(--gn-primary)",
-				secondary: "var(--gn-secondary)",
-				secondary_light: "var(--gn-secondary-light)",
-				link: "var(--gn-link)",
-				text_primary: "var(--gn-text-primary)",
-				text_secondary: "var(--gn-text-secondary)",
+				"background-start": "var(--background-start)",
+				"background-end": "var(--background-end)",
+				"primary-start": "var(--primary-start)",
+				"primary-end": "var(--primary-end)",
+				secondary: "var(--secondary)",
+				"text-primary": "var(--text-primary)",
+				"text-secondary": "var(--text-secondary)",
+				"card-bg": "var(--card-bg)",
+				success: "var(--success)",
+			},
+			backgroundImage: {
+				"gradient-bg": "linear-gradient(to bottom right, var(--background-start), var(--background-end))",
+				"gradient-primary": "linear-gradient(to right, var(--primary-start), var(--primary-end))",
+			},
+			fontFamily: {
+				sans: ["var(--font-inter)", "sans-serif"],
+				mono: ["var(--font-jetbrains-mono)", "monospace"],
 			},
 		},
 	},
