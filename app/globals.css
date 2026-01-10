@@ -3,31 +3,50 @@
 @tailwind utilities;
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
-	--gn-primary: #510A32;
-	--gn-secondary: #801336;
-	--gn-secondary-light: #C72C41;
-	--gn-link: #EE4540;
-	--gn-text-primary: #ecebfd;
-	--gn-text-secondary: #b6b4c5;
-}
+	/* Background gradient: #0a0e27 → #0f172a */
+	--background-start: #0a0e27;
+	--background-end: #0f172a;
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #1b1833;
-		--foreground: #ededed;
-		--gn-primary: #510A32;
-		--gn-secondary: #801336;
-		--gn-secondary-light: #C72C41;
-		--gn-link: #EE4540;
-		--gn-text-primary: #ecebfd;
-		--gn-text-secondary: #c5c3d8;
-	}
+	/* Primary accent gradient: #3b82f6 → #8b5cf6 */
+	--primary-start: #3b82f6;
+	--primary-end: #8b5cf6;
+
+	/* Secondary accent */
+	--secondary: #06b6d4;
+
+	/* Text colors */
+	--text-primary: #f1f5f9;
+	--text-secondary: #cbd5e1;
+
+	/* Card background */
+	--card-bg: #1e293b;
+
+	/* Success color */
+	--success: #10b981;
 }
 
 body {
-	color: var(--foreground);
-	background: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+	color: var(--text-primary);
+	background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+	min-height: 100vh;
+}
+
+@layer utilities {
+	/* Marquee animation for tech stack */
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+	.animate-marquee {
+		animation: marquee 30s linear infinite;
+	}
+
+	.animate-marquee:hover {
+		animation-play-state: paused;
+	}
 }
