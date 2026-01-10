@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import Button from "../ui/Button";
 import Input from "../ui/Input";
 import Textarea from "../ui/Textarea";
-import Button from "../ui/Button";
 
 /**
  * ContactForm component with Formspree integration
@@ -21,7 +21,9 @@ const ContactForm = () => {
 		message: "",
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+	const [submitStatus, setSubmitStatus] = useState<
+		"idle" | "success" | "error"
+	>("idle");
 
 	// Email validation regex
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,7 +53,9 @@ const ContactForm = () => {
 		return !newErrors.name && !newErrors.email && !newErrors.message;
 	};
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+	const handleChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		const { name, value } = e.target;
 		setFormData((prev) => ({
 			...prev,
@@ -79,13 +83,16 @@ const ContactForm = () => {
 
 		try {
 			// Placeholder Formspree endpoint - replace with actual endpoint when configured
-			const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
+			const response = await fetch(
+				`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(formData),
+				}
+			);
 
 			if (response.ok) {
 				setSubmitStatus("success");
@@ -102,15 +109,18 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="w-full">
-			<form onSubmit={handleSubmit} className="space-y-6">
+		<div className='w-full'>
+			<form
+				onSubmit={handleSubmit}
+				className='space-y-6'
+			>
 				{/* Name Field */}
 				<Input
-					id="name"
-					name="name"
-					type="text"
-					label="Name"
-					placeholder="Your name"
+					id='name'
+					name='name'
+					type='text'
+					label='Name'
+					placeholder='Your name'
 					value={formData.name}
 					onChange={handleChange}
 					error={errors.name}
@@ -120,11 +130,11 @@ const ContactForm = () => {
 
 				{/* Email Field */}
 				<Input
-					id="email"
-					name="email"
-					type="email"
-					label="Email"
-					placeholder="your.email@example.com"
+					id='email'
+					name='email'
+					type='email'
+					label='Email'
+					placeholder='your.email@example.com'
 					value={formData.email}
 					onChange={handleChange}
 					error={errors.email}
@@ -134,10 +144,10 @@ const ContactForm = () => {
 
 				{/* Message Field */}
 				<Textarea
-					id="message"
-					name="message"
-					label="Message"
-					placeholder="Tell me about your project or idea..."
+					id='message'
+					name='message'
+					label='Message'
+					placeholder='Tell me about your project or idea...'
 					value={formData.message}
 					onChange={handleChange}
 					error={errors.message}
@@ -148,24 +158,32 @@ const ContactForm = () => {
 				/>
 
 				{/* Submit Button */}
-				<Button type="submit" variant="primary" size="lg" disabled={isSubmitting} className="w-full">
+				<Button
+					type='submit'
+					variant='primary'
+					size='lg'
+					disabled={isSubmitting}
+					className='w-full'
+				>
 					{isSubmitting ? "Sending..." : "Send Message"}
 				</Button>
 
 				{/* Success Message */}
 				{submitStatus === "success" && (
-					<div className="p-4 bg-success/20 border border-success rounded-xl">
-						<p className="text-success text-center font-medium">
-							Message sent successfully! I'll get back to you soon.
+					<div className='p-4 bg-success/20 border border-success rounded-xl'>
+						<p className='text-success text-center font-medium'>
+							Message sent successfully! I'll get back to you
+							soon.
 						</p>
 					</div>
 				)}
 
 				{/* Error Message */}
 				{submitStatus === "error" && (
-					<div className="p-4 bg-red-500/20 border border-red-500 rounded-xl">
-						<p className="text-red-500 text-center font-medium">
-							Failed to send message. Please try again or email me directly.
+					<div className='p-4 bg-red-500/20 border border-red-500 rounded-xl'>
+						<p className='text-red-500 text-center font-medium'>
+							Failed to send message. Please try again or email me
+							directly.
 						</p>
 					</div>
 				)}
