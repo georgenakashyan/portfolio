@@ -79,12 +79,11 @@ export default function ContactPage() {
 							{/* Download Resume */}
 							<div className='pt-6'>
 								<Button
+									href='/George-Nakashyan-Resume.pdf'
 									variant='secondary'
 									size='lg'
-									href='/George-Nakashyan-Resume.pdf'
 									download
-									iconURL='/assets/download_icon.svg'
-									iconAlt='Download'
+									target='_blank'
 								>
 									Download Resume
 								</Button>
