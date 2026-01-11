@@ -44,7 +44,7 @@ const StatsBar = () => {
 							key={stat.label}
 							variant='hover'
 							padding='lg'
-							className='text-center group'
+							className='text-center group cursor-default'
 						>
 							{/* Icon */}
 							<div className='text-5xl mb-4 group-hover:scale-110 transition-transform duration-300'>

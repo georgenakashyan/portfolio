@@ -45,7 +45,7 @@ const QuickTimeline = () => {
 								<Card
 									variant='hover'
 									padding='md'
-									className='h-full'
+									className='h-full cursor-default'
 								>
 									<div className='text-center'>
 										{/* Date Range */}
