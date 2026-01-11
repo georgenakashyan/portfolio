@@ -63,7 +63,7 @@ export const projects: Project[] = [
 			"TypeScript",
 			"Tailwind CSS",
 		],
-		image: "/projects/enterprise-app.png",
+		image: "/images/projects/softworld-program.png",
 		featured: true,
 		category: "Full Stack",
 	},

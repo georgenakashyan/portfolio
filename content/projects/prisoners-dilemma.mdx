@@ -46,15 +46,15 @@ The project implements a comprehensive simulation framework for studying the Pri
 The research examined behavior across multiple network types:
 
 -   **Complete graphs** - Every node connected to every other node (baseline)
--   **Random graphs** - Erdős–Rényi random networks with varying edge probabilities
 -   **Small-world networks** - Watts-Strogatz networks with high clustering
--   **Scale-free networks** - Barabási–Albert preferential attachment networks
+-   **Scale-free networks** - Facebook Dataset networks with high average degrees per node
 -   **Grid networks** - 2D lattice structures with local neighborhood interactions
 
 ### Strategy Implementation
 
 Multiple classic game theory strategies were implemented:
 
+-   **Popularity-Based** - Choose the same strategy as the neighbor with the highest degree
 -   **Always Cooperate** - Always chooses cooperation regardless of opponent behavior
 -   **Always Defect** - Always defects to maximize individual payoff
 -   **Tit-for-Tat** - Mirrors opponent's previous move (proven effective in tournaments)
