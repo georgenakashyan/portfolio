@@ -45,7 +45,7 @@ export const projects: Project[] = [
 			"Academic research project simulating game theory strategies on graph networks. Published with IEEE and ACM for the ASONAM 2023 conference proceedings with novel insights on cooperative behavior patterns.",
 		techStack: ["Python", "NetworkX", "Matplotlib", "NumPy", "Pandas"],
 		image: "/images/projects/prisoners-dilemma.jpeg",
-		github: "https://github.com/georgenakashyan/prisoners-dilemma",
+		github: "https://github.com/georgenakashyan/PrisonerDilemmaSimulation",
 		featured: true,
 		category: "Research",
 	},
