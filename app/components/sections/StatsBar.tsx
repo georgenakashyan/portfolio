@@ -9,9 +9,9 @@ import Card from "../ui/Card";
 const StatsBar = () => {
 	const stats = [
 		{
-			label: "Experience",
+			label: "Years of Experience",
 			value: "2+",
-			description: "Years Professional",
+			description: "Software Engineering",
 			icon: "⚡",
 		},
 		{
@@ -23,13 +23,13 @@ const StatsBar = () => {
 		{
 			label: "Projects",
 			value: "10+",
-			description: "Technical Projects",
+			description: "Personal and Professional",
 			icon: "💻",
 		},
 		{
-			label: "Research",
+			label: "Publication",
 			value: "1",
-			description: "Published Paper",
+			description: "Research Papers",
 			icon: "📊",
 		},
 	];
