@@ -27,19 +27,19 @@ const QuickTimeline = () => {
 				</div>
 
 				{/* Timeline - Horizontal on larger screens, vertical on mobile */}
-				<div className='relative'>
+				<div className='relative md:pt-12'>
 					{/* Timeline Line */}
-					<div className='hidden md:block absolute top-24 left-0 right-0 h-1 bg-gradient-primary'></div>
+					<div className='hidden md:block absolute top-12 left-0 right-0 h-1 bg-gradient-primary'></div>
 
 					{/* Timeline Items */}
-					<div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6'>
+					<div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 md:mt-8'>
 						{experiences.map((experience, index) => (
 							<div
 								key={`${experience.company}-${index}`}
 								className='relative'
 							>
 								{/* Timeline Dot */}
-								<div className='hidden md:flex absolute top-[88px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-gradient-primary rounded-full border-4 border-background-start z-10 shadow-lg shadow-primary-start/50'></div>
+								<div className='hidden md:flex absolute -top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-gradient-primary rounded-full border-4 border-background-start z-10 shadow-lg shadow-primary-start/50'></div>
 
 								{/* Experience Card */}
 								<Card
