@@ -53,7 +53,7 @@ const Button = ({
 	};
 
 	// Base classes shared by all buttons
-	const baseClasses = `rounded-full select-none inline-flex items-center justify-center space-x-2 ${sizeClasses[size]} ${variantClasses[variant]} ${
+	const baseClasses = `group rounded-full select-none inline-flex items-center justify-center space-x-2 ${sizeClasses[size]} ${variantClasses[variant]} ${
 		disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
 	} ${className}`;
 
@@ -64,13 +64,19 @@ const Button = ({
 				<Image
 					src={iconURL}
 					alt={iconAlt}
-					className="max-w-6 max-h-6"
+					className={`max-w-6 max-h-6 transition-all duration-300 ${
+						variant === "secondary" ? "group-hover:brightness-0 group-hover:invert" : ""
+					}`}
 					width={24}
 					height={24}
 					style={
 						variant === "primary"
 							? {
 									filter: "invert(100%) sepia(0%) saturate(0%) hue-rotate(321deg) brightness(111%) contrast(101%)",
+							  }
+							: variant === "secondary"
+							? {
+									filter: "invert(74%) sepia(61%) saturate(2968%) hue-rotate(146deg) brightness(91%) contrast(101%)",
 							  }
 							: undefined
 					}

@@ -54,7 +54,7 @@ const Input = ({
 		return "border-white/10 focus:border-primary-start focus:ring-primary-start/20";
 	};
 
-	const baseClasses = `w-full px-4 py-3 bg-card-bg/40 backdrop-blur-lg text-text-primary placeholder:text-text-secondary/50 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 ${getValidationClasses()} ${
+	const baseClasses = `w-full px-4 py-3 bg-[#1a2332] text-white placeholder:text-slate-400 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 ${getValidationClasses()} ${
 		disabled ? "opacity-50 cursor-not-allowed" : ""
 	} ${className}`;
 
@@ -80,6 +80,10 @@ const Input = ({
 				required={required}
 				autoComplete={autoComplete}
 				className={baseClasses}
+				style={{
+					WebkitTextFillColor: "#ffffff",
+					WebkitBoxShadow: "0 0 0px 1000px #1a2332 inset",
+				}}
 			/>
 			{error && <p className="mt-1.5 text-sm text-red-500">{error}</p>}
 			{!error && helperText && <p className="mt-1.5 text-sm text-text-secondary/70">{helperText}</p>}

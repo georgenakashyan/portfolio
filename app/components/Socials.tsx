@@ -33,21 +33,6 @@ const Socials = () => {
 					}}
 				/>
 			</a>
-			<a
-				href={`mailto:${process.env.myEmail}`}
-				rel='noreferrer noopener'
-			>
-				<Image
-					src='./assets/email_icon.svg'
-					alt='Email me'
-					className='max-w-14 max-y-14'
-					width={40}
-					height={40}
-					style={{
-						filter: "invert(100%) sepia(0%) saturate(0%) hue-rotate(321deg) brightness(111%) contrast(101%)",
-					}}
-				/>
-			</a>
 		</div>
 	);
 };
