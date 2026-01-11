@@ -84,7 +84,7 @@ const ProjectDetail = ({ frontmatter, children }: ProjectDetailProps) => {
 				)}
 
 				{/* MDX Content */}
-				<Card variant="default" padding="lg" className="prose prose-invert max-w-none">
+				<Card variant="default" padding="lg">
 					<div className="mdx-content">{children}</div>
 				</Card>
 			</div>
