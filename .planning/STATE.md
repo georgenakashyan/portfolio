@@ -11,16 +11,16 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 2 of 5 (Surface Styling)
-Plan: 2 of 4 complete
+Plan: 3 of 4 complete
 Status: In progress
-Last activity: 2026-01-16 -- Completed 02-02-PLAN.md (Card Component Semantic Token Refactor)
+Last activity: 2026-01-16 -- Completed 02-03-PLAN.md (Badge Semantic Token Refactor)
 
-Progress: ████░░░░░░ 40%
+Progress: █████░░░░░ 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
+- Total plans completed: 5
 - Average duration: ~3 min
 
 **By Phase:**
@@ -28,7 +28,7 @@ Progress: ████░░░░░░ 40%
 | Phase | Plans | Completed | Avg/Plan |
 |-------|-------|-----------|----------|
 | 01-foundation | 2 | 2 | ~4 min |
-| 02-surface-styling | 4 | 2 | ~2.5 min |
+| 02-surface-styling | 4 | 3 | ~2 min |
 
 ## Accumulated Context
 
@@ -47,6 +47,8 @@ Progress: ████░░░░░░ 40%
 | #243548 for surface-overlay | 02-01 | Slightly lighter than raised for modal/dropdown prominence |
 | Subtle hover lift (translate-y-1) | 02-02 | More professional than -2, per research recommendation |
 | shadow-raised on all card variants | 02-02 | Ensures cards always have visible depth against background |
+| Keep blur-sm for badges | 02-03 | Appropriate for pill-sized elements vs Card's blur-lg |
+| Multi-property hover transition | 02-03 | Background, text, and border all change for clear interactivity |
 
 ### Pending Todos
 
@@ -59,5 +61,5 @@ Progress: ████░░░░░░ 40%
 ## Session Continuity
 
 Last session: 2026-01-16
-Stopped at: Completed 02-02-PLAN.md
-Resume file: .planning/phases/02-surface-styling/02-03-PLAN.md
+Stopped at: Completed 02-03-PLAN.md
+Resume file: .planning/phases/02-surface-styling/02-04-PLAN.md
