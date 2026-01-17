@@ -6,21 +6,21 @@ See: .planning/PROJECT.md
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 4 -- Typography + Polish (COMPLETE)
+**Current focus:** Phase 5 -- Motion + Scroll (IN PROGRESS)
 
 ## Current Position
 
-Phase: 4 of 5 (Typography + Polish)
-Plan: 1 of 1 complete
-Status: Phase complete
-Last activity: 2026-01-17 -- Completed 04-01-PLAN.md (Scrollbar + Selection Polish)
+Phase: 5 of 5 (Motion + Scroll)
+Plan: 1 of 2 complete
+Status: In progress
+Last activity: 2026-01-17 -- Completed 05-01-PLAN.md (Animation Foundation + Page Transition Fix)
 
-Progress: █████████░ 90%
+Progress: █████████░ 95%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: ~2.5 min
 
 **By Phase:**
@@ -31,6 +31,7 @@ Progress: █████████░ 90%
 | 02-surface-styling | 4 | 4 | ~2 min |
 | 03-accent-colors | 2 | 2 | ~2 min |
 | 04-typography-polish | 1 | 1 | ~2 min |
+| 05-motion-scroll | 2 | 1 | ~3 min |
 
 ## Accumulated Context
 
@@ -62,17 +63,20 @@ Progress: █████████░ 90%
 | Thin scrollbar width | 04-01 | Minimal aesthetic reduces visual clutter on dark theme |
 | 30% selection opacity | 04-01 | Visible highlight without obscuring text readability |
 | Inline contrast documentation | 04-01 | Single source of truth; visible during development |
+| Centralized animation variants | 05-01 | Single source of truth for animation timing; no 'use client' needed |
+| FrozenRouter pattern | 05-01 | Prevents hydration animation replay in App Router |
+| useSelectedLayoutSegment key | 05-01 | More stable than usePathname; doesn't change on hash navigation |
 
 ### Pending Todos
 
-- **Phase 5**: Fix page transition animation repeating on hydration (plays twice on page load)
+(None - hydration bug fixed in 05-01)
 
 ### Blockers/Concerns
 
-(None yet)
+- **LayoutRouterContext fragility**: Uses internal Next.js API that may change on version updates. Fallback plan: Remove exit animations if import breaks.
 
 ## Session Continuity
 
 Last session: 2026-01-17
-Stopped at: Completed Phase 04 (Typography + Polish)
-Resume file: None - ready for Phase 05 planning
+Stopped at: Completed 05-01-PLAN.md (Animation Foundation + Page Transition Fix)
+Resume file: None - ready for 05-02-PLAN.md
