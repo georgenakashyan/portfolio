@@ -32,26 +32,27 @@ const Badge = ({ children, variant = "default", size = "md", iconURL, iconAlt = 
 	// Variant classes using semantic tokens
 	const variantClasses = {
 		// Default badge with subtle glassmorphism
-		// Uses blur-sm (smaller blur for pill-sized elements)
 		default:
 			"bg-surface-elevated/60 text-content-secondary border border-border backdrop-blur-sm " +
 			"hover:bg-surface-elevated/80 hover:text-content-primary hover:border-border-strong " +
-			"transition-all duration-200",
+			"transition-all duration-150",
 
-		// Primary badge with gradient
+		// Primary badge with gradient and consistent glow
 		primary:
 			"bg-gradient-primary text-content-primary border border-accent-secondary/30 " +
-			"hover:shadow-md hover:shadow-accent-primary/30 transition-all duration-200",
+			"hover:shadow-md hover:shadow-accent-primary/30 transition-all duration-150",
 
-		// Secondary badge (cyan accent)
+		// Secondary badge (cyan accent) with matching glow
 		secondary:
 			"bg-accent-tertiary/20 text-accent-tertiary border border-accent-tertiary/50 " +
-			"hover:bg-accent-tertiary/30 hover:border-accent-tertiary transition-all duration-200",
+			"hover:bg-accent-tertiary/30 hover:border-accent-tertiary " +
+			"hover:shadow-md hover:shadow-accent-tertiary/30 transition-all duration-150",
 
-		// Success badge
+		// Success badge with matching glow
 		success:
 			"bg-status-success/20 text-status-success border border-status-success/50 " +
-			"hover:bg-status-success/30 hover:border-status-success transition-all duration-200",
+			"hover:bg-status-success/30 hover:border-status-success " +
+			"hover:shadow-md hover:shadow-status-success/30 transition-all duration-150",
 	};
 
 	const baseClasses = `rounded-full inline-flex items-center justify-center font-medium select-none ${sizeClasses[size]} ${variantClasses[variant]} ${className}`;
