@@ -3,25 +3,76 @@
 @tailwind utilities;
 
 :root {
-	/* Background gradient: #0a0e27 → #0f172a */
+	/* =========================
+	   LAYER 1: PRIMITIVE TOKENS
+	   Raw color values - never use directly in components
+	   ========================= */
+	--color-neutral-950: #0a0a0f;
+	--color-neutral-900: #0a0e27;
+	--color-neutral-800: #0f172a;
+	--color-neutral-700: #1e293b;
+	--color-neutral-400: #94a3b8;
+	--color-neutral-300: #cbd5e1;
+	--color-neutral-100: #f1f5f9;
+
+	--color-primary-500: #3b82f6;
+	--color-violet-500: #8b5cf6;
+	--color-cyan-500: #06b6d4;
+	--color-emerald-500: #10b981;
+	--color-rose-500: #f43f5e;
+
+	/* =========================
+	   LAYER 2: SEMANTIC TOKENS
+	   Purpose-based mappings - use these in components
+	   ========================= */
+
+	/* Surfaces */
+	--surface-base: var(--color-neutral-900);
+	--surface-elevated: var(--color-neutral-800);
+	--surface-raised: var(--color-neutral-700);
+
+	/* Text */
+	--text-primary: var(--color-neutral-100);
+	--text-secondary: var(--color-neutral-300);
+	--text-muted: var(--color-neutral-400);
+
+	/* Accents */
+	--accent-primary: var(--color-primary-500);
+	--accent-secondary: var(--color-violet-500);
+	--accent-tertiary: var(--color-cyan-500);
+
+	/* Status */
+	--status-success: var(--color-emerald-500);
+	--status-error: var(--color-rose-500);
+
+	/* Gradients */
+	--gradient-primary-from: var(--color-primary-500);
+	--gradient-primary-to: var(--color-violet-500);
+	--gradient-surface-from: var(--color-neutral-900);
+	--gradient-surface-to: var(--color-neutral-800);
+
+	/* Borders */
+	--border-subtle: rgba(255, 255, 255, 0.05);
+	--border-default: rgba(255, 255, 255, 0.1);
+	--border-strong: rgba(255, 255, 255, 0.2);
+
+	/* Focus (for accessibility) */
+	--focus-ring-color: #ffffff;
+	--focus-ring-offset: 2px;
+	--focus-ring-width: 2px;
+	--focus-shadow-color: rgba(0, 0, 0, 0.5);
+
+	/* =========================
+	   LEGACY TOKENS (keep during migration)
+	   Remove after all components migrated
+	   ========================= */
 	--background-start: #0a0e27;
 	--background-end: #0f172a;
-
-	/* Primary accent gradient: #3b82f6 → #8b5cf6 */
 	--primary-start: #3b82f6;
 	--primary-end: #8b5cf6;
-
-	/* Secondary accent */
 	--secondary: #06b6d4;
-
-	/* Text colors */
-	--text-primary: #f1f5f9;
-	--text-secondary: #cbd5e1;
-
-	/* Card background */
+	/* Note: --text-primary and --text-secondary are now semantic tokens above */
 	--card-bg: #1e293b;
-
-	/* Success color */
 	--success: #10b981;
 }
 
