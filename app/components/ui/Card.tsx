@@ -21,14 +21,22 @@ const Card = ({ children, variant = "default", padding = "md", className = "", o
 		lg: "p-8",
 	};
 
-	// Variant classes
+	// Variant classes using semantic tokens
 	const variantClasses = {
 		// Standard glassmorphism card with backdrop blur
-		default: "bg-card-bg/40 backdrop-blur-lg border border-white/10",
+		// Uses surface-elevated (which is neutral-800) for transparency base
+		default:
+			"bg-surface-elevated/40 backdrop-blur-lg border border-border shadow-raised",
+
 		// Interactive card with hover lift effect
-		hover: "bg-card-bg/40 backdrop-blur-lg border border-white/10 hover:bg-card-bg/60 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-start/20 transition-all duration-300 cursor-pointer",
-		// Flat card without glassmorphism
-		flat: "bg-card-bg border border-white/5",
+		// Increases opacity, elevates shadow, and strengthens border on hover
+		hover:
+			"bg-surface-elevated/40 backdrop-blur-lg border border-border shadow-raised " +
+			"hover:bg-surface-elevated/60 hover:-translate-y-1 hover:shadow-overlay " +
+			"hover:border-border-strong transition-all duration-300 cursor-pointer",
+
+		// Flat card without glassmorphism (for content that needs solid background)
+		flat: "bg-surface-raised border border-border-subtle",
 	};
 
 	const baseClasses = `rounded-3xl ${paddingClasses[padding]} ${variantClasses[variant]} ${className}`;
