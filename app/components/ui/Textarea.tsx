@@ -53,7 +53,7 @@ const Textarea = ({
 		if (success) {
 			return "border-success focus:border-success focus:ring-success/20";
 		}
-		return "border-white/10 focus:border-primary-start focus:ring-primary-start/20";
+		return "border-border focus:border-accent-primary focus:ring-accent-primary/20";
 	};
 
 	// Resize classes
@@ -64,7 +64,7 @@ const Textarea = ({
 		both: "resize",
 	};
 
-	const baseClasses = `w-full px-4 py-3 bg-[#1a2332] text-white placeholder:text-slate-400 rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 ${getValidationClasses()} ${
+	const baseClasses = `w-full px-4 py-3 bg-surface-raised text-content-primary placeholder:text-content-muted rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 ${getValidationClasses()} ${
 		disabled ? "opacity-50 cursor-not-allowed" : ""
 	} ${resizeClasses[resize]} ${className}`;
 
@@ -91,8 +91,8 @@ const Textarea = ({
 				maxLength={maxLength}
 				className={baseClasses}
 				style={{
-					WebkitTextFillColor: "#ffffff",
-					WebkitBoxShadow: "0 0 0px 1000px #1a2332 inset",
+					WebkitTextFillColor: "var(--text-primary)",
+					WebkitBoxShadow: "0 0 0px 1000px hsl(217 33% 17%) inset",
 				}}
 			/>
 			{error && <p className="mt-1.5 text-sm text-red-500">{error}</p>}
