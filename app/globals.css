@@ -30,6 +30,8 @@
 	--surface-base: var(--color-neutral-900);
 	--surface-elevated: var(--color-neutral-800);
 	--surface-raised: var(--color-neutral-700);
+	--surface-sunken: var(--color-neutral-950);
+	--surface-overlay: #243548;
 
 	/* Text */
 	--text-primary: var(--color-neutral-100);
@@ -61,6 +63,16 @@
 	--focus-ring-offset: 2px;
 	--focus-ring-width: 2px;
 	--focus-shadow-color: rgba(0, 0, 0, 0.5);
+
+	/* Shadows (dark theme optimized - layered for realism) */
+	--shadow-color: 220deg 40% 2%;
+	--shadow-raised:
+		0px 1px 2px hsl(var(--shadow-color) / 0.3),
+		0px 2px 4px hsl(var(--shadow-color) / 0.3);
+	--shadow-overlay:
+		0px 2px 4px hsl(var(--shadow-color) / 0.4),
+		0px 4px 8px hsl(var(--shadow-color) / 0.3),
+		0px 8px 16px hsl(var(--shadow-color) / 0.2);
 
 	/* =========================
 	   LEGACY TOKENS (keep during migration)
