@@ -30,9 +30,9 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 ### Interactions
 
-- [ ] **INT-01**: Make project cards clickable links to individual project pages
-- [ ] **INT-02**: Add subtle section reveal animations on scroll
-- [ ] **INT-03**: Enhance page transitions with refined Framer Motion animations
+- [x] **INT-01**: Make project cards clickable links to individual project pages
+- [x] **INT-02**: Add subtle section reveal animations on scroll
+- [x] **INT-03**: Enhance page transitions with refined Framer Motion animations
 
 ## v2 Requirements
 
@@ -79,9 +79,9 @@ Which phases cover which requirements. Updated by create-roadmap.
 | COMP-02 | Phase 2 | Complete |
 | COMP-03 | Phase 3 | Complete |
 | COMP-04 | Phase 4 | Complete |
-| INT-01 | Phase 5 | Pending |
-| INT-02 | Phase 5 | Pending |
-| INT-03 | Phase 5 | Pending |
+| INT-01 | Phase 5 | Complete |
+| INT-02 | Phase 5 | Complete |
+| INT-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 15 total
@@ -90,4 +90,4 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 ---
 *Requirements defined: 2026-01-16*
-*Last updated: 2026-01-17 after Phase 3 completion*
+*Last updated: 2026-01-17 after Phase 5 completion*

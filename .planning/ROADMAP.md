@@ -116,9 +116,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md - Create animation variants and fix PageTransition hydration bug
-- [ ] 05-02-PLAN.md - Add scroll reveal animations to all sections
-- [ ] 05-03-PLAN.md - Verify interactions and final motion polish
+- [x] 05-01-PLAN.md - Create animation variants and fix PageTransition hydration bug
+- [x] 05-02-PLAN.md - Add scroll reveal animations to all sections
+- [x] 05-03-PLAN.md - Verify interactions and final motion polish
 
 ---
 
@@ -130,7 +130,7 @@ Plans:
 | 2 - Surface Styling | Complete | 2026-01-16 |
 | 3 - Accent Colors | Complete | 2026-01-17 |
 | 4 - Typography + Polish | Complete | 2026-01-17 |
-| 5 - Motion + Scroll | Not started | -- |
+| 5 - Motion + Scroll | Complete | 2026-01-17 |
 
 ---
 
