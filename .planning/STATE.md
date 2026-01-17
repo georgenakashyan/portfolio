@@ -6,21 +6,21 @@ See: .planning/PROJECT.md
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 3 -- Accent Colors (COMPLETE)
+**Current focus:** Phase 4 -- Typography + Polish (IN PROGRESS)
 
 ## Current Position
 
-Phase: 3 of 5 (Accent Colors)
-Plan: 2 of 2 complete
+Phase: 4 of 5 (Typography + Polish)
+Plan: 1 of 1 complete
 Status: Phase complete
-Last activity: 2026-01-17 -- Completed Phase 03 (Accent Colors)
+Last activity: 2026-01-17 -- Completed 04-01-PLAN.md (Scrollbar + Selection Polish)
 
-Progress: ████████░░ 80%
+Progress: █████████░ 90%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: ~2.5 min
 
 **By Phase:**
@@ -30,6 +30,7 @@ Progress: ████████░░ 80%
 | 01-foundation | 2 | 2 | ~4 min |
 | 02-surface-styling | 4 | 4 | ~2 min |
 | 03-accent-colors | 2 | 2 | ~2 min |
+| 04-typography-polish | 1 | 1 | ~2 min |
 
 ## Accumulated Context
 
@@ -58,6 +59,9 @@ Progress: ████████░░ 80%
 | Subtle scale values (1.02/0.98) | 03-02 | Professional feel - 1.05 too bouncy |
 | 150ms buttons/badges, 200ms cards | 03-02 | Snappy feedback; cards benefit from slightly slower depth transition |
 | Array-based Tailwind composition | 03-02 | Improves readability for multi-state styling |
+| Thin scrollbar width | 04-01 | Minimal aesthetic reduces visual clutter on dark theme |
+| 30% selection opacity | 04-01 | Visible highlight without obscuring text readability |
+| Inline contrast documentation | 04-01 | Single source of truth; visible during development |
 
 ### Pending Todos
 
@@ -70,5 +74,5 @@ Progress: ████████░░ 80%
 ## Session Continuity
 
 Last session: 2026-01-17
-Stopped at: Completed Phase 03 (Accent Colors)
-Resume file: None - ready for Phase 04 planning
+Stopped at: Completed 04-01-PLAN.md (Scrollbar + Selection Polish)
+Resume file: None - ready for Phase 05
