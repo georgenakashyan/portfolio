@@ -24,7 +24,11 @@ This roadmap delivers a dark/moody visual refresh of the portfolio site in five 
 3. Animations respect user's prefers-reduced-motion setting (no motion when disabled)
 4. Color tokens follow three-layer architecture (primitive, semantic, utility) in globals.css and tailwind.config.ts
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md - Implement three-layer semantic color token architecture
+- [ ] 01-02-PLAN.md - Add H1 sizing, focus indicators, and reduced motion support
 
 ---
 
@@ -103,7 +107,7 @@ This roadmap delivers a dark/moody visual refresh of the portfolio site in five 
 
 | Phase | Status | Completed |
 |-------|--------|-----------|
-| 1 - Foundation | Not started | -- |
+| 1 - Foundation | Planned | -- |
 | 2 - Surface Styling | Not started | -- |
 | 3 - Accent Colors | Not started | -- |
 | 4 - Typography + Polish | Not started | -- |
