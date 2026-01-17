@@ -310,3 +310,22 @@ body {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	margin: 2.5rem 0;
 }
+
+/* =========================
+   INLINE LINK STYLES
+   Ensures links are distinguishable from text per WCAG 1.4.1
+   Navigation links excluded (positioned context provides distinction)
+   ========================= */
+a[href]:not([class]):not(nav a) {
+	color: var(--accent-primary);
+	text-decoration: underline;
+	text-decoration-color: var(--accent-primary);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	transition: color 150ms, text-decoration-color 150ms;
+}
+
+a[href]:not([class]):not(nav a):hover {
+	color: var(--accent-secondary);
+	text-decoration-color: var(--accent-secondary);
+}
