@@ -49,10 +49,10 @@ Plans:
 **Plans:** 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md - Add shadow and surface elevation tokens
-- [ ] 02-02-PLAN.md - Refactor Card component to use semantic tokens
-- [ ] 02-03-PLAN.md - Refactor Badge component to use semantic tokens
-- [ ] 02-04-PLAN.md - Migrate Experience, Input, and Textarea to semantic tokens
+- [x] 02-01-PLAN.md - Add shadow and surface elevation tokens
+- [x] 02-02-PLAN.md - Refactor Card component to use semantic tokens
+- [x] 02-03-PLAN.md - Refactor Badge component to use semantic tokens
+- [x] 02-04-PLAN.md - Migrate Experience, Input, and Textarea to semantic tokens
 
 ---
 
@@ -113,8 +113,8 @@ Plans:
 
 | Phase | Status | Completed |
 |-------|--------|-----------|
-| 1 - Foundation | ✓ Complete | 2026-01-16 |
-| 2 - Surface Styling | Not started | -- |
+| 1 - Foundation | Complete | 2026-01-16 |
+| 2 - Surface Styling | Complete | 2026-01-16 |
 | 3 - Accent Colors | Not started | -- |
 | 4 - Typography + Polish | Not started | -- |
 | 5 - Motion + Scroll | Not started | -- |

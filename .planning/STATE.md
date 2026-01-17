@@ -6,21 +6,21 @@ See: .planning/PROJECT.md
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 2 -- Surface Styling
+**Current focus:** Phase 2 -- Surface Styling (COMPLETE)
 
 ## Current Position
 
 Phase: 2 of 5 (Surface Styling)
-Plan: 3 of 4 complete
-Status: In progress
-Last activity: 2026-01-16 -- Completed 02-03-PLAN.md (Badge Semantic Token Refactor)
+Plan: 4 of 4 complete
+Status: Phase complete
+Last activity: 2026-01-16 -- Completed 02-04-PLAN.md (Secondary Component Migration)
 
-Progress: █████░░░░░ 50%
+Progress: ██████░░░░ 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
+- Total plans completed: 6
 - Average duration: ~3 min
 
 **By Phase:**
@@ -28,7 +28,7 @@ Progress: █████░░░░░ 50%
 | Phase | Plans | Completed | Avg/Plan |
 |-------|-------|-----------|----------|
 | 01-foundation | 2 | 2 | ~4 min |
-| 02-surface-styling | 4 | 3 | ~2 min |
+| 02-surface-styling | 4 | 4 | ~2 min |
 
 ## Accumulated Context
 
@@ -49,6 +49,8 @@ Progress: █████░░░░░ 50%
 | shadow-raised on all card variants | 02-02 | Ensures cards always have visible depth against background |
 | Keep blur-sm for badges | 02-03 | Appropriate for pill-sized elements vs Card's blur-lg |
 | Multi-property hover transition | 02-03 | Background, text, and border all change for clear interactivity |
+| HSL literal for autofill shadow | 02-04 | WebkitBoxShadow requires literal color; CSS var for text only |
+| surface-raised for form inputs | 02-04 | Forms on cards need raised level for proper depth hierarchy |
 
 ### Pending Todos
 
@@ -61,5 +63,5 @@ Progress: █████░░░░░ 50%
 ## Session Continuity
 
 Last session: 2026-01-16
-Stopped at: Completed 02-03-PLAN.md
-Resume file: .planning/phases/02-surface-styling/02-04-PLAN.md
+Stopped at: Completed Phase 02 (Surface Styling)
+Resume file: None - ready for Phase 03 planning
