@@ -61,7 +61,7 @@ Progress: ████████░░ 80%
 
 ### Pending Todos
 
-(None yet)
+- **Phase 5**: Fix page transition animation repeating on hydration (plays twice on page load)
 
 ### Blockers/Concerns
 

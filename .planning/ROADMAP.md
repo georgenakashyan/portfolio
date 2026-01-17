@@ -108,6 +108,7 @@ Plans:
 2. Sections fade/slide into view when scrolling down the page
 3. Page transitions feel smoother and more refined than current implementation
 4. Animations are subtle and professional (not flashy or distracting)
+5. Page transition animation plays once on navigation (no repeat on hydration)
 
 **Plans:** (created by /gsd:plan-phase)
 
