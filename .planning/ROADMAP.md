@@ -91,7 +91,10 @@ Plans:
 2. Scrollbar styling matches dark theme (not default browser light scrollbar)
 3. Text selection highlight uses theme-appropriate colors
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md - Add scrollbar styling, text selection, and contrast documentation
 
 ---
 
