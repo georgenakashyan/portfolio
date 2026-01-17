@@ -16,19 +16,19 @@ const Experience = ({
 	description,
 }: ExperienceProps) => {
 	return (
-		<div className='grid grid-cols-10 grid-rows-1 -m-6 p-6 space-x-10 border border-background rounded-3xl hover:bg-opacity-5 hover:bg-slate-200 transition'>
-			<div className='col-span-3 text-sm pt-1 min-w-fit text-text_secondary'>
+		<div className='grid grid-cols-10 grid-rows-1 -m-6 p-6 space-x-10 border border-border rounded-3xl hover:bg-surface-elevated/10 transition-colors duration-200'>
+			<div className='col-span-3 text-sm pt-1 min-w-fit text-content-secondary'>
 				{startDate} — {endDate}
 			</div>
 			<div className='col-span-7'>
 				<p className='text-xl font-semibold'>{position}</p>
 				<p className='text-lg'>{company}</p>
 				<p className='text-md'>{location}</p>
-				<ul className='list-disc pl-5 pt-2 text-text_secondary'>
+				<ul className='list-disc pl-5 pt-2 text-content-secondary'>
 					{description.map((bullet, index) => (
 						<li
 							key={index}
-							className='text-sm text-text_secondary'
+							className='text-sm text-content-secondary'
 						>
 							{bullet}
 						</li>
