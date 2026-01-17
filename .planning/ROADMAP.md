@@ -46,7 +46,13 @@ Plans:
 3. Glassmorphism effects (backdrop-blur, transparency) are consistent across all card-like components
 4. Visual hierarchy is clear: background < sunken < base < raised < overlay
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md - Add shadow and surface elevation tokens
+- [ ] 02-02-PLAN.md - Refactor Card component to use semantic tokens
+- [ ] 02-03-PLAN.md - Refactor Badge component to use semantic tokens
+- [ ] 02-04-PLAN.md - Migrate Experience, Input, and Textarea to semantic tokens
 
 ---
 
