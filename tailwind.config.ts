@@ -60,8 +60,19 @@ export default {
 					"linear-gradient(to right, var(--gradient-primary-from), var(--gradient-primary-to))",
 			},
 			boxShadow: {
+				// Existing depth shadows
 				raised: "var(--shadow-raised)",
 				overlay: "var(--shadow-overlay)",
+				// Glow size variants (use primary color)
+				"glow-sm": "var(--shadow-glow-sm)",
+				"glow-md": "var(--shadow-glow-md)",
+				"glow-lg": "var(--shadow-glow-lg)",
+				// Combined depth + glow for cards
+				"glow-card": "var(--shadow-glow-card)",
+				// Specific color glows (for buttons matching accent colors)
+				"glow-primary": "0 0 15px var(--glow-primary)",
+				"glow-secondary": "0 0 15px var(--glow-secondary)",
+				"glow-tertiary": "0 0 15px var(--glow-tertiary)",
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", "sans-serif"],
