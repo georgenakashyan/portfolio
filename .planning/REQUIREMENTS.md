@@ -16,16 +16,16 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 ### Color System
 
-- [ ] **COLOR-01**: Define new accent color palette replacing blue-purple gradient with cohesive dark/moody scheme
+- [x] **COLOR-01**: Define new accent color palette replacing blue-purple gradient with cohesive dark/moody scheme
 - [x] **COLOR-02**: Implement three-layer semantic color token architecture (primitive, semantic, utility)
-- [ ] **COLOR-03**: Add colored glow effects on interactive elements (buttons, cards, links)
+- [x] **COLOR-03**: Add colored glow effects on interactive elements (buttons, cards, links)
 - [x] **COLOR-04**: Create depth hierarchy system with shadows/elevation for visual layering
 
 ### Component Styling
 
 - [x] **COMP-01**: Refresh card styling with improved depth, borders, and hover states
 - [x] **COMP-02**: Enhance glassmorphism with consistent backdrop-blur usage across components
-- [ ] **COMP-03**: Refine button and link micro-interactions (hover, active, focus states)
+- [x] **COMP-03**: Refine button and link micro-interactions (hover, active, focus states)
 - [ ] **COMP-04**: Style custom scrollbar to match dark theme
 
 ### Interactions
@@ -71,13 +71,13 @@ Which phases cover which requirements. Updated by create-roadmap.
 | A11Y-02 | Phase 1 | Complete |
 | A11Y-03 | Phase 4 | Pending |
 | A11Y-04 | Phase 1 | Complete |
-| COLOR-01 | Phase 3 | Pending |
+| COLOR-01 | Phase 3 | Complete |
 | COLOR-02 | Phase 1 | Complete |
-| COLOR-03 | Phase 3 | Pending |
+| COLOR-03 | Phase 3 | Complete |
 | COLOR-04 | Phase 2 | Complete |
 | COMP-01 | Phase 2 | Complete |
 | COMP-02 | Phase 2 | Complete |
-| COMP-03 | Phase 3 | Pending |
+| COMP-03 | Phase 3 | Complete |
 | COMP-04 | Phase 4 | Pending |
 | INT-01 | Phase 5 | Pending |
 | INT-02 | Phase 5 | Pending |
@@ -90,4 +90,4 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 ---
 *Requirements defined: 2026-01-16*
-*Last updated: 2026-01-16 after Phase 2 completion*
+*Last updated: 2026-01-17 after Phase 3 completion*

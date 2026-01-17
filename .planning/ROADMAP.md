@@ -73,8 +73,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md - Add glow tokens and link base styles
-- [ ] 03-02-PLAN.md - Refactor Button, Card, and Badge with glow effects
+- [x] 03-01-PLAN.md - Add glow tokens and link base styles
+- [x] 03-02-PLAN.md - Refactor Button, Card, and Badge with glow effects
 
 ---
 
@@ -119,7 +119,7 @@ Plans:
 |-------|--------|-----------|
 | 1 - Foundation | Complete | 2026-01-16 |
 | 2 - Surface Styling | Complete | 2026-01-16 |
-| 3 - Accent Colors | Not started | -- |
+| 3 - Accent Colors | Complete | 2026-01-17 |
 | 4 - Typography + Polish | Not started | -- |
 | 5 - Motion + Scroll | Not started | -- |
 
