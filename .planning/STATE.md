@@ -6,21 +6,21 @@ See: .planning/PROJECT.md
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 5 -- Motion + Scroll (IN PROGRESS)
+**Current focus:** Phase 5 -- Motion + Scroll (COMPLETE)
 
 ## Current Position
 
 Phase: 5 of 5 (Motion + Scroll)
-Plan: 1 of 2 complete
-Status: In progress
-Last activity: 2026-01-17 -- Completed 05-01-PLAN.md (Animation Foundation + Page Transition Fix)
+Plan: 2 of 2 complete
+Status: Phase complete
+Last activity: 2026-01-17 -- Completed 05-02-PLAN.md (Section Scroll Reveals)
 
-Progress: █████████░ 95%
+Progress: ██████████ 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
+- Total plans completed: 11
 - Average duration: ~2.5 min
 
 **By Phase:**
@@ -31,7 +31,7 @@ Progress: █████████░ 95%
 | 02-surface-styling | 4 | 4 | ~2 min |
 | 03-accent-colors | 2 | 2 | ~2 min |
 | 04-typography-polish | 1 | 1 | ~2 min |
-| 05-motion-scroll | 2 | 1 | ~3 min |
+| 05-motion-scroll | 2 | 2 | ~2.5 min |
 
 ## Accumulated Context
 
@@ -66,10 +66,13 @@ Progress: █████████░ 95%
 | Centralized animation variants | 05-01 | Single source of truth for animation timing; no 'use client' needed |
 | FrozenRouter pattern | 05-01 | Prevents hydration animation replay in App Router |
 | useSelectedLayoutSegment key | 05-01 | More stable than usePathname; doesn't change on hash navigation |
+| viewport={{ once: true }} for all scroll reveals | 05-02 | Animations play only on first view, not every scroll pass |
+| Amount thresholds: 0.5 headers, 0.1-0.2 grids | 05-02 | Small headers need more in view, large grids trigger earlier |
+| Skip individual skill badge animations | 05-02 | Too many items would create slow, overwhelming animation |
 
 ### Pending Todos
 
-(None - hydration bug fixed in 05-01)
+(None - all phase 5 work complete)
 
 ### Blockers/Concerns
 
@@ -78,5 +81,14 @@ Progress: █████████░ 95%
 ## Session Continuity
 
 Last session: 2026-01-17
-Stopped at: Completed 05-01-PLAN.md (Animation Foundation + Page Transition Fix)
-Resume file: None - ready for 05-02-PLAN.md
+Stopped at: Completed 05-02-PLAN.md (Section Scroll Reveals)
+Resume file: None - all phases complete
+
+## Project Status
+
+All 5 phases complete:
+- Phase 01: Foundation (design tokens, global styles)
+- Phase 02: Surface Styling (shadows, cards, badges, forms)
+- Phase 03: Accent Colors (gradients, links, micro-interactions)
+- Phase 04: Typography + Polish (scrollbar, selection)
+- Phase 05: Motion + Scroll (page transitions, scroll reveals)
