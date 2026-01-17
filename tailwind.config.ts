@@ -9,6 +9,37 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				// NEW: Semantic surface colors
+				surface: {
+					base: "var(--surface-base)",
+					elevated: "var(--surface-elevated)",
+					raised: "var(--surface-raised)",
+				},
+				// NEW: Semantic content/text colors
+				content: {
+					primary: "var(--text-primary)",
+					secondary: "var(--text-secondary)",
+					muted: "var(--text-muted)",
+				},
+				// NEW: Semantic accent colors
+				accent: {
+					primary: "var(--accent-primary)",
+					secondary: "var(--accent-secondary)",
+					tertiary: "var(--accent-tertiary)",
+				},
+				// NEW: Status colors
+				status: {
+					success: "var(--status-success)",
+					error: "var(--status-error)",
+				},
+				// NEW: Border colors
+				border: {
+					subtle: "var(--border-subtle)",
+					DEFAULT: "var(--border-default)",
+					strong: "var(--border-strong)",
+				},
+
+				// LEGACY: Keep existing tokens during migration
 				"background-start": "var(--background-start)",
 				"background-end": "var(--background-end)",
 				"primary-start": "var(--primary-start)",
@@ -20,8 +51,11 @@ export default {
 				success: "var(--success)",
 			},
 			backgroundImage: {
-				"gradient-bg": "linear-gradient(to bottom right, var(--background-start), var(--background-end))",
-				"gradient-primary": "linear-gradient(to right, var(--primary-start), var(--primary-end))",
+				// Use semantic gradient tokens
+				"gradient-bg":
+					"linear-gradient(to bottom right, var(--gradient-surface-from), var(--gradient-surface-to))",
+				"gradient-primary":
+					"linear-gradient(to right, var(--gradient-primary-from), var(--gradient-primary-to))",
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", "sans-serif"],
