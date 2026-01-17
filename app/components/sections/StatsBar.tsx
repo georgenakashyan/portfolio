@@ -1,12 +1,21 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import Card from "../ui/Card";
+import {
+	staggerContainerVariants,
+	staggerItemVariants,
+	reducedContainerVariants,
+	reducedItemVariants,
+} from "@/app/components/animation/variants";
 
 /**
  * StatsBar section displays key statistics and achievements
  * Features 4 prominent metrics: GPA, Research Publications, Technical Projects, and Years of Experience
  */
 const StatsBar = () => {
+	const shouldReduceMotion = useReducedMotion();
+
 	const stats = [
 		{
 			label: "Years of Experience",
@@ -38,38 +47,48 @@ const StatsBar = () => {
 		<section className='py-20 px-6 md:px-12 lg:px-20'>
 			<div className='container mx-auto'>
 				{/* Stats Grid */}
-				<div className='grid grid-cols-2 lg:grid-cols-4 gap-6'>
+				<motion.div
+					className='grid grid-cols-2 lg:grid-cols-4 gap-6'
+					variants={shouldReduceMotion ? reducedContainerVariants : staggerContainerVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.2 }}
+				>
 					{stats.map((stat) => (
-						<Card
+						<motion.div
 							key={stat.label}
-							variant='hover'
-							padding='lg'
-							className='text-center group cursor-default'
+							variants={shouldReduceMotion ? reducedItemVariants : staggerItemVariants}
 						>
-							{/* Icon */}
-							<div className='text-5xl mb-4 group-hover:scale-110 transition-transform duration-300'>
-								{stat.icon}
-							</div>
+							<Card
+								variant='hover'
+								padding='lg'
+								className='text-center group cursor-default'
+							>
+								{/* Icon */}
+								<div className='text-5xl mb-4 group-hover:scale-110 transition-transform duration-300'>
+									{stat.icon}
+								</div>
 
-							{/* Value */}
-							<div className='text-4xl md:text-5xl font-bold mb-2'>
-								<span className='bg-gradient-primary bg-clip-text text-transparent'>
-									{stat.value}
-								</span>
-							</div>
+								{/* Value */}
+								<div className='text-4xl md:text-5xl font-bold mb-2'>
+									<span className='bg-gradient-primary bg-clip-text text-transparent'>
+										{stat.value}
+									</span>
+								</div>
 
-							{/* Label */}
-							<div className='text-text-primary font-semibold text-lg mb-1'>
-								{stat.label}
-							</div>
+								{/* Label */}
+								<div className='text-text-primary font-semibold text-lg mb-1'>
+									{stat.label}
+								</div>
 
-							{/* Description */}
-							<div className='text-text-secondary text-sm'>
-								{stat.description}
-							</div>
-						</Card>
+								{/* Description */}
+								<div className='text-text-secondary text-sm'>
+									{stat.description}
+								</div>
+							</Card>
+						</motion.div>
 					))}
-				</div>
+				</motion.div>
 
 				{/* Additional Context */}
 				<div className='mt-12 text-center'>
