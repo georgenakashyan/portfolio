@@ -126,11 +126,24 @@
 
 /* =========================
    H1 EXPLICIT SIZING
-   Fixes H1UserAgentFontSizeInSection Lighthouse warning
-   Uses :where() for zero specificity - won't override component styles
-   Source: MDN Blog - H1 element styles
+   Fixes H1UserAgentFontSizeInSection Chrome deprecation warning
+   Browsers apply smaller font-size to h1 inside section/article/aside/nav
+   This explicitly overrides all nesting levels
+   Source: MDN - H1 element styles, Chrome deprecation docs
    ========================= */
 :where(h1) {
+	font-size: 2em;
+	margin-block: 0.67em;
+}
+
+/* Override browser's nested h1 size reduction */
+:where(article, aside, nav, section) :where(h1) {
+	font-size: 2em;
+	margin-block: 0.67em;
+}
+
+/* Handle deeply nested h1 (section > section > h1, etc.) */
+:where(article, aside, nav, section) :where(article, aside, nav, section) :where(h1) {
 	font-size: 2em;
 	margin-block: 0.67em;
 }
