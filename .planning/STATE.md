@@ -11,24 +11,24 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 2 of 5 (Surface Styling)
-Plan: 1 of 4 complete
+Plan: 2 of 4 complete
 Status: In progress
-Last activity: 2026-01-16 -- Completed 02-01-PLAN.md (Shadow and Surface Elevation Tokens)
+Last activity: 2026-01-16 -- Completed 02-02-PLAN.md (Card Component Semantic Token Refactor)
 
-Progress: ███░░░░░░░ 30%
+Progress: ████░░░░░░ 40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: ~4 min
+- Total plans completed: 4
+- Average duration: ~3 min
 
 **By Phase:**
 
 | Phase | Plans | Completed | Avg/Plan |
 |-------|-------|-----------|----------|
 | 01-foundation | 2 | 2 | ~4 min |
-| 02-surface-styling | 4 | 1 | ~3 min |
+| 02-surface-styling | 4 | 2 | ~2.5 min |
 
 ## Accumulated Context
 
@@ -45,6 +45,8 @@ Progress: ███░░░░░░░ 30%
 | 220deg hue for shadow-color | 02-01 | Matches theme blue undertone for cohesive dark palette |
 | Multi-layer shadows (2-3 layers) | 02-01 | Josh Comeau technique for realistic depth perception |
 | #243548 for surface-overlay | 02-01 | Slightly lighter than raised for modal/dropdown prominence |
+| Subtle hover lift (translate-y-1) | 02-02 | More professional than -2, per research recommendation |
+| shadow-raised on all card variants | 02-02 | Ensures cards always have visible depth against background |
 
 ### Pending Todos
 
@@ -57,5 +59,5 @@ Progress: ███░░░░░░░ 30%
 ## Session Continuity
 
 Last session: 2026-01-16
-Stopped at: Completed 02-01-PLAN.md
-Resume file: .planning/phases/02-surface-styling/02-02-PLAN.md
+Stopped at: Completed 02-02-PLAN.md
+Resume file: .planning/phases/02-surface-styling/02-03-PLAN.md
