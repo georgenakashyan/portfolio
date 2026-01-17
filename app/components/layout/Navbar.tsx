@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 /**
  * Sticky navigation bar with glassmorphism background
@@ -13,6 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const pathname = usePathname();
+	const shouldReduceMotion = useReducedMotion();
 
 	const navLinks = [
 		{ href: "/", label: "Home" },
@@ -70,15 +71,18 @@ const Navbar = () => {
 						<div className="w-6 h-5 flex flex-col justify-between">
 							<motion.span
 								animate={isMobileMenuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-								className="w-full h-0.5 bg-current transform origin-center transition-all"
+								transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
+								className="w-full h-0.5 bg-current transform origin-center"
 							/>
 							<motion.span
 								animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-								className="w-full h-0.5 bg-current transition-all"
+								transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
+								className="w-full h-0.5 bg-current"
 							/>
 							<motion.span
 								animate={isMobileMenuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-								className="w-full h-0.5 bg-current transform origin-center transition-all"
+								transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
+								className="w-full h-0.5 bg-current transform origin-center"
 							/>
 						</div>
 					</button>
@@ -89,10 +93,14 @@ const Navbar = () => {
 			<AnimatePresence>
 				{isMobileMenuOpen && (
 					<motion.div
-						initial={{ x: "100%", opacity: 0 }}
+						initial={{ x: shouldReduceMotion ? 0 : "100%", opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
-						exit={{ x: "100%", opacity: 0 }}
-						transition={{ type: "spring", stiffness: 300, damping: 30 }}
+						exit={{ x: shouldReduceMotion ? 0 : "100%", opacity: 0 }}
+						transition={
+							shouldReduceMotion
+								? { duration: 0 }
+								: { type: "spring", stiffness: 300, damping: 30 }
+						}
 						className="fixed top-16 right-0 h-[calc(100vh-4rem)] w-64 bg-card-bg border-l border-text-secondary/10 shadow-xl md:hidden"
 					>
 						<div className="flex flex-col space-y-4 p-6">
@@ -125,6 +133,7 @@ const Navbar = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
+						transition={{ duration: shouldReduceMotion ? 0 : 0.2 }}
 						onClick={closeMobileMenu}
 						className="fixed inset-0 top-16 bg-black/50 backdrop-blur-sm md:hidden z-40"
 					/>
