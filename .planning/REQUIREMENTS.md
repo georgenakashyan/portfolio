@@ -11,7 +11,7 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 - [x] **A11Y-01**: Fix H1UserAgentFontSizeInSection Lighthouse warning with explicit font sizing
 - [x] **A11Y-02**: Implement visible focus indicators with double-layered outlines for keyboard navigation
-- [ ] **A11Y-03**: Audit and verify 4.5:1+ contrast ratios on all text elements
+- [x] **A11Y-03**: Audit and verify 4.5:1+ contrast ratios on all text elements
 - [x] **A11Y-04**: Add prefers-reduced-motion support to disable animations for users who prefer it
 
 ### Color System
@@ -26,7 +26,7 @@ Requirements for visual refresh. Each maps to roadmap phases.
 - [x] **COMP-01**: Refresh card styling with improved depth, borders, and hover states
 - [x] **COMP-02**: Enhance glassmorphism with consistent backdrop-blur usage across components
 - [x] **COMP-03**: Refine button and link micro-interactions (hover, active, focus states)
-- [ ] **COMP-04**: Style custom scrollbar to match dark theme
+- [x] **COMP-04**: Style custom scrollbar to match dark theme
 
 ### Interactions
 
@@ -69,7 +69,7 @@ Which phases cover which requirements. Updated by create-roadmap.
 |-------------|-------|--------|
 | A11Y-01 | Phase 1 | Complete |
 | A11Y-02 | Phase 1 | Complete |
-| A11Y-03 | Phase 4 | Pending |
+| A11Y-03 | Phase 4 | Complete |
 | A11Y-04 | Phase 1 | Complete |
 | COLOR-01 | Phase 3 | Complete |
 | COLOR-02 | Phase 1 | Complete |
@@ -78,7 +78,7 @@ Which phases cover which requirements. Updated by create-roadmap.
 | COMP-01 | Phase 2 | Complete |
 | COMP-02 | Phase 2 | Complete |
 | COMP-03 | Phase 3 | Complete |
-| COMP-04 | Phase 4 | Pending |
+| COMP-04 | Phase 4 | Complete |
 | INT-01 | Phase 5 | Pending |
 | INT-02 | Phase 5 | Pending |
 | INT-03 | Phase 5 | Pending |

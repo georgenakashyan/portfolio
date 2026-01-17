@@ -94,7 +94,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 04-01-PLAN.md - Add scrollbar styling, text selection, and contrast documentation
+- [x] 04-01-PLAN.md - Add scrollbar styling, text selection, and contrast documentation
 
 ---
 
@@ -124,7 +124,7 @@ Plans:
 | 1 - Foundation | Complete | 2026-01-16 |
 | 2 - Surface Styling | Complete | 2026-01-16 |
 | 3 - Accent Colors | Complete | 2026-01-17 |
-| 4 - Typography + Polish | Not started | -- |
+| 4 - Typography + Polish | Complete | 2026-01-17 |
 | 5 - Motion + Scroll | Not started | -- |
 
 ---
