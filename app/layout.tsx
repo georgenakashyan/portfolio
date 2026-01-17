@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Footer from "./components/layout/Footer";
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
 	authors: [{ name: "George Nakashyan" }],
 	creator: "George Nakashyan",
 	metadataBase: new URL(
-		process.env.NEXT_PUBLIC_SITE_URL || "https://georgenakashyan.com"
+		process.env.NEXT_PUBLIC_SITE_URL || "https://georgenakashyan.com",
 	),
 	openGraph: {
 		type: "website",
@@ -68,6 +69,7 @@ export default function RootLayout({
 				<PageTransition>
 					<main className='flex-grow'>
 						{children}
+						<SpeedInsights />
 						<Analytics />
 					</main>
 				</PageTransition>
