@@ -2,26 +2,27 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md
+See: .planning/PROJECT.md (updated 2026-01-17)
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 5 -- Motion + Scroll (COMPLETE)
+**Current focus:** v1.0 complete — Ready for next milestone planning
 
 ## Current Position
 
-Phase: 5 of 5 (Motion + Scroll)
-Plan: 3 of 3 complete
-Status: Phase complete
-Last activity: 2026-01-17 -- Completed 05-03-PLAN.md (Verify Interactions + Motion Polish)
+Milestone: v1.0 Visual Refresh — SHIPPED
+Phase: 5 of 5 complete
+Status: Milestone archived
+Last activity: 2026-01-17 — v1.0 milestone complete
 
 Progress: ██████████ 100%
 
 ## Performance Metrics
 
-**Velocity:**
+**v1.0 Velocity:**
 - Total plans completed: 12
-- Average duration: ~2.5 min
+- Average duration: ~2.5 min per plan
+- Timeline: 2 days (2026-01-16 → 2026-01-17)
 
 **By Phase:**
 
@@ -35,44 +36,19 @@ Progress: ██████████ 100%
 
 ## Accumulated Context
 
-### Decisions
+### Key Decisions (v1.0)
 
-| Decision | Phase | Rationale |
-|----------|-------|-----------|
-| Keep legacy tokens during migration | 01-01 | Existing components continue working without changes |
-| Use `content.*` instead of `text.*` in Tailwind | 01-01 | Avoids conflict with existing Tailwind `text-*` utilities |
-| Include focus ring tokens in foundation | 01-01 | Prepares for accessibility work in Plan 02 |
-| Use `:where(h1)` for zero specificity | 01-02 | Allows component-specific h1 styles to easily override |
-| Two-color focus ring (white + dark shadow) | 01-02 | Ensures visibility on both light and dark backgrounds per WCAG |
-| Use 0.01ms instead of 0 for reduced motion | 01-02 | More reliable cross-browser support for reduced motion |
-| 220deg hue for shadow-color | 02-01 | Matches theme blue undertone for cohesive dark palette |
-| Multi-layer shadows (2-3 layers) | 02-01 | Josh Comeau technique for realistic depth perception |
-| #243548 for surface-overlay | 02-01 | Slightly lighter than raised for modal/dropdown prominence |
-| Subtle hover lift (translate-y-1) | 02-02 | More professional than -2, per research recommendation |
-| shadow-raised on all card variants | 02-02 | Ensures cards always have visible depth against background |
-| Keep blur-sm for badges | 02-03 | Appropriate for pill-sized elements vs Card's blur-lg |
-| Multi-property hover transition | 02-03 | Background, text, and border all change for clear interactivity |
-| HSL literal for autofill shadow | 02-04 | WebkitBoxShadow requires literal color; CSS var for text only |
-| surface-raised for form inputs | 02-04 | Forms on cards need raised level for proper depth hierarchy |
-| 40% opacity baseline for glows | 03-01 | Professional appearance without gaming aesthetic |
-| Semantic tokens for links | 03-01 | Consistency with design token system |
-| Exclude nav links from underlines | 03-01 | Positioned context provides sufficient distinction |
-| Subtle scale values (1.02/0.98) | 03-02 | Professional feel - 1.05 too bouncy |
-| 150ms buttons/badges, 200ms cards | 03-02 | Snappy feedback; cards benefit from slightly slower depth transition |
-| Array-based Tailwind composition | 03-02 | Improves readability for multi-state styling |
-| Thin scrollbar width | 04-01 | Minimal aesthetic reduces visual clutter on dark theme |
-| 30% selection opacity | 04-01 | Visible highlight without obscuring text readability |
-| Inline contrast documentation | 04-01 | Single source of truth; visible during development |
-| Centralized animation variants | 05-01 | Single source of truth for animation timing; no 'use client' needed |
-| FrozenRouter pattern | 05-01 | Prevents hydration animation replay in App Router |
-| useSelectedLayoutSegment key | 05-01 | More stable than usePathname; doesn't change on hash navigation |
-| viewport={{ once: true }} for all scroll reveals | 05-02 | Animations play only on first view, not every scroll pass |
-| Amount thresholds: 0.5 headers, 0.1-0.2 grids | 05-02 | Small headers need more in view, large grids trigger earlier |
-| Skip individual skill badge animations | 05-02 | Too many items would create slow, overwhelming animation |
+See PROJECT.md Key Decisions table for full list with outcomes.
+
+Notable decisions:
+- Three-layer token architecture (primitive → semantic → utility)
+- FrozenRouter pattern for page transitions
+- 40% opacity glow baseline
+- viewport={{ once: true }} for scroll reveals
 
 ### Pending Todos
 
-(None - all phase 5 work complete)
+(None — milestone complete)
 
 ### Blockers/Concerns
 
@@ -81,14 +57,12 @@ Progress: ██████████ 100%
 ## Session Continuity
 
 Last session: 2026-01-17
-Stopped at: All 5 phases complete - Milestone v1.0 ready for audit
-Resume file: None - ready for /gsd:audit-milestone
+Stopped at: v1.0 milestone complete and archived
+Resume file: None — ready for /gsd:discuss-milestone
 
-## Project Status
+## Archives
 
-All 5 phases complete:
-- Phase 01: Foundation (design tokens, global styles)
-- Phase 02: Surface Styling (shadows, cards, badges, forms)
-- Phase 03: Accent Colors (gradients, links, micro-interactions)
-- Phase 04: Typography + Polish (scrollbar, selection)
-- Phase 05: Motion + Scroll (page transitions, scroll reveals)
+- `.planning/milestones/v1.0-ROADMAP.md` — Full roadmap for v1.0
+- `.planning/milestones/v1.0-REQUIREMENTS.md` — Requirements for v1.0
+- `.planning/milestones/v1.0-MILESTONE-AUDIT.md` — Audit report
+- `.planning/MILESTONES.md` — Summary of all shipped milestones
