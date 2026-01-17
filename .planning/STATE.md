@@ -10,17 +10,17 @@ See: .planning/PROJECT.md
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation)
-Plan: 2 of 2 complete
-Status: Phase complete
-Last activity: 2026-01-16 -- Completed 01-02-PLAN.md (Accessibility Fixes)
+Phase: 2 of 5 (Surface Styling)
+Plan: 1 of 4 complete
+Status: In progress
+Last activity: 2026-01-16 -- Completed 02-01-PLAN.md (Shadow and Surface Elevation Tokens)
 
-Progress: ██░░░░░░░░ 20%
+Progress: ███░░░░░░░ 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
+- Total plans completed: 3
 - Average duration: ~4 min
 
 **By Phase:**
@@ -28,6 +28,7 @@ Progress: ██░░░░░░░░ 20%
 | Phase | Plans | Completed | Avg/Plan |
 |-------|-------|-----------|----------|
 | 01-foundation | 2 | 2 | ~4 min |
+| 02-surface-styling | 4 | 1 | ~3 min |
 
 ## Accumulated Context
 
@@ -41,6 +42,9 @@ Progress: ██░░░░░░░░ 20%
 | Use `:where(h1)` for zero specificity | 01-02 | Allows component-specific h1 styles to easily override |
 | Two-color focus ring (white + dark shadow) | 01-02 | Ensures visibility on both light and dark backgrounds per WCAG |
 | Use 0.01ms instead of 0 for reduced motion | 01-02 | More reliable cross-browser support for reduced motion |
+| 220deg hue for shadow-color | 02-01 | Matches theme blue undertone for cohesive dark palette |
+| Multi-layer shadows (2-3 layers) | 02-01 | Josh Comeau technique for realistic depth perception |
+| #243548 for surface-overlay | 02-01 | Slightly lighter than raised for modal/dropdown prominence |
 
 ### Pending Todos
 
@@ -53,5 +57,5 @@ Progress: ██░░░░░░░░ 20%
 ## Session Continuity
 
 Last session: 2026-01-16
-Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
-Resume file: .planning/phases/02-surface-styling/
+Stopped at: Completed 02-01-PLAN.md
+Resume file: .planning/phases/02-surface-styling/02-02-PLAN.md
