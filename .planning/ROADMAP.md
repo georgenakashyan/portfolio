@@ -70,7 +70,11 @@ Plans:
 3. All buttons have distinct visual states: default, hover, active, focus
 4. Links are visually distinguishable from surrounding text
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md - Add glow tokens and link base styles
+- [ ] 03-02-PLAN.md - Refactor Button, Card, and Badge with glow effects
 
 ---
 
