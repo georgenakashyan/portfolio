@@ -19,12 +19,12 @@ Requirements for visual refresh. Each maps to roadmap phases.
 - [ ] **COLOR-01**: Define new accent color palette replacing blue-purple gradient with cohesive dark/moody scheme
 - [x] **COLOR-02**: Implement three-layer semantic color token architecture (primitive, semantic, utility)
 - [ ] **COLOR-03**: Add colored glow effects on interactive elements (buttons, cards, links)
-- [ ] **COLOR-04**: Create depth hierarchy system with shadows/elevation for visual layering
+- [x] **COLOR-04**: Create depth hierarchy system with shadows/elevation for visual layering
 
 ### Component Styling
 
-- [ ] **COMP-01**: Refresh card styling with improved depth, borders, and hover states
-- [ ] **COMP-02**: Enhance glassmorphism with consistent backdrop-blur usage across components
+- [x] **COMP-01**: Refresh card styling with improved depth, borders, and hover states
+- [x] **COMP-02**: Enhance glassmorphism with consistent backdrop-blur usage across components
 - [ ] **COMP-03**: Refine button and link micro-interactions (hover, active, focus states)
 - [ ] **COMP-04**: Style custom scrollbar to match dark theme
 
@@ -74,9 +74,9 @@ Which phases cover which requirements. Updated by create-roadmap.
 | COLOR-01 | Phase 3 | Pending |
 | COLOR-02 | Phase 1 | Complete |
 | COLOR-03 | Phase 3 | Pending |
-| COLOR-04 | Phase 2 | Pending |
-| COMP-01 | Phase 2 | Pending |
-| COMP-02 | Phase 2 | Pending |
+| COLOR-04 | Phase 2 | Complete |
+| COMP-01 | Phase 2 | Complete |
+| COMP-02 | Phase 2 | Complete |
 | COMP-03 | Phase 3 | Pending |
 | COMP-04 | Phase 4 | Pending |
 | INT-01 | Phase 5 | Pending |
@@ -90,4 +90,4 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 ---
 *Requirements defined: 2026-01-16*
-*Last updated: 2026-01-16 after Phase 1 completion*
+*Last updated: 2026-01-16 after Phase 2 completion*
