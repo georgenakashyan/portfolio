@@ -371,3 +371,13 @@ html {
 ::-webkit-scrollbar-corner {
 	background: var(--scrollbar-track);
 }
+
+/* =========================
+   TEXT SELECTION STYLING
+   Themed highlight for selected text
+   Uses accent blue at 30% opacity for readability
+   ========================= */
+::selection {
+	background-color: rgba(59, 130, 246, 0.3);
+	color: var(--text-primary);
+}
