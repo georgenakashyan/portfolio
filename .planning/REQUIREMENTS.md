@@ -17,7 +17,7 @@ Requirements for visual refresh. Each maps to roadmap phases.
 ### Color System
 
 - [ ] **COLOR-01**: Define new accent color palette replacing blue-purple gradient with cohesive dark/moody scheme
-- [ ] **COLOR-02**: Implement three-layer semantic color token architecture (primitive → semantic → utility)
+- [ ] **COLOR-02**: Implement three-layer semantic color token architecture (primitive, semantic, utility)
 - [ ] **COLOR-03**: Add colored glow effects on interactive elements (buttons, cards, links)
 - [ ] **COLOR-04**: Create depth hierarchy system with shadows/elevation for visual layering
 
@@ -67,27 +67,27 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| A11Y-01 | TBD | Pending |
-| A11Y-02 | TBD | Pending |
-| A11Y-03 | TBD | Pending |
-| A11Y-04 | TBD | Pending |
-| COLOR-01 | TBD | Pending |
-| COLOR-02 | TBD | Pending |
-| COLOR-03 | TBD | Pending |
-| COLOR-04 | TBD | Pending |
-| COMP-01 | TBD | Pending |
-| COMP-02 | TBD | Pending |
-| COMP-03 | TBD | Pending |
-| COMP-04 | TBD | Pending |
-| INT-01 | TBD | Pending |
-| INT-02 | TBD | Pending |
-| INT-03 | TBD | Pending |
+| A11Y-01 | Phase 1 | Pending |
+| A11Y-02 | Phase 1 | Pending |
+| A11Y-03 | Phase 4 | Pending |
+| A11Y-04 | Phase 1 | Pending |
+| COLOR-01 | Phase 3 | Pending |
+| COLOR-02 | Phase 1 | Pending |
+| COLOR-03 | Phase 3 | Pending |
+| COLOR-04 | Phase 2 | Pending |
+| COMP-01 | Phase 2 | Pending |
+| COMP-02 | Phase 2 | Pending |
+| COMP-03 | Phase 3 | Pending |
+| COMP-04 | Phase 4 | Pending |
+| INT-01 | Phase 5 | Pending |
+| INT-02 | Phase 5 | Pending |
+| INT-03 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 15 total
-- Mapped to phases: 0
-- Unmapped: 15 (awaiting roadmap)
+- Mapped to phases: 15
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-16*
-*Last updated: 2026-01-16 after initial definition*
+*Last updated: 2026-01-16 after roadmap creation*
