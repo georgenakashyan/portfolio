@@ -14,6 +14,8 @@ export default {
 					base: "var(--surface-base)",
 					elevated: "var(--surface-elevated)",
 					raised: "var(--surface-raised)",
+					sunken: "var(--surface-sunken)",
+					overlay: "var(--surface-overlay)",
 				},
 				// NEW: Semantic content/text colors
 				content: {
@@ -56,6 +58,10 @@ export default {
 					"linear-gradient(to bottom right, var(--gradient-surface-from), var(--gradient-surface-to))",
 				"gradient-primary":
 					"linear-gradient(to right, var(--gradient-primary-from), var(--gradient-primary-to))",
+			},
+			boxShadow: {
+				raised: "var(--shadow-raised)",
+				overlay: "var(--shadow-overlay)",
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", "sans-serif"],
