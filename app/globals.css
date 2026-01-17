@@ -74,6 +74,27 @@
 		0px 4px 8px hsl(var(--shadow-color) / 0.3),
 		0px 8px 16px hsl(var(--shadow-color) / 0.2);
 
+	/* Glow effects (for interactive elements) */
+	--glow-primary: rgba(59, 130, 246, 0.4);      /* blue at 40% */
+	--glow-secondary: rgba(139, 92, 246, 0.4);   /* violet at 40% */
+	--glow-tertiary: rgba(6, 182, 212, 0.4);     /* cyan at 40% */
+
+	/* Glow intensity variants */
+	--glow-primary-subtle: rgba(59, 130, 246, 0.2);
+	--glow-primary-strong: rgba(59, 130, 246, 0.5);
+
+	/* Pre-composed glow shadows */
+	--shadow-glow-sm: 0 0 8px var(--glow-primary);
+	--shadow-glow-md: 0 0 15px var(--glow-primary);
+	--shadow-glow-lg:
+		0 0 20px var(--glow-primary),
+		0 0 40px var(--glow-primary-subtle);
+
+	/* Combined depth + glow for cards */
+	--shadow-glow-card:
+		var(--shadow-overlay),
+		0 0 20px var(--glow-primary-subtle);
+
 	/* =========================
 	   LEGACY TOKENS (keep during migration)
 	   Remove after all components migrated
@@ -263,13 +284,17 @@ body {
 }
 
 .mdx-content a {
-	color: var(--primary-start);
+	color: var(--accent-primary);
 	text-decoration: underline;
-	transition: color 0.2s;
+	text-decoration-color: var(--accent-primary);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	transition: color 150ms, text-decoration-color 150ms;
 }
 
 .mdx-content a:hover {
-	color: var(--primary-end);
+	color: var(--accent-secondary);
+	text-decoration-color: var(--accent-secondary);
 }
 
 .mdx-content blockquote {
