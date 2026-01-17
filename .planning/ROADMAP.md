@@ -113,7 +113,12 @@ Plans:
 4. Animations are subtle and professional (not flashy or distracting)
 5. Page transition animation plays once on navigation (no repeat on hydration)
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 3 plans
+
+Plans:
+- [ ] 05-01-PLAN.md - Create animation variants and fix PageTransition hydration bug
+- [ ] 05-02-PLAN.md - Add scroll reveal animations to all sections
+- [ ] 05-03-PLAN.md - Verify interactions and final motion polish
 
 ---
 
