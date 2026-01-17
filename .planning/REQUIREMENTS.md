@@ -9,15 +9,15 @@ Requirements for visual refresh. Each maps to roadmap phases.
 
 ### Accessibility
 
-- [ ] **A11Y-01**: Fix H1UserAgentFontSizeInSection Lighthouse warning with explicit font sizing
-- [ ] **A11Y-02**: Implement visible focus indicators with double-layered outlines for keyboard navigation
+- [x] **A11Y-01**: Fix H1UserAgentFontSizeInSection Lighthouse warning with explicit font sizing
+- [x] **A11Y-02**: Implement visible focus indicators with double-layered outlines for keyboard navigation
 - [ ] **A11Y-03**: Audit and verify 4.5:1+ contrast ratios on all text elements
-- [ ] **A11Y-04**: Add prefers-reduced-motion support to disable animations for users who prefer it
+- [x] **A11Y-04**: Add prefers-reduced-motion support to disable animations for users who prefer it
 
 ### Color System
 
 - [ ] **COLOR-01**: Define new accent color palette replacing blue-purple gradient with cohesive dark/moody scheme
-- [ ] **COLOR-02**: Implement three-layer semantic color token architecture (primitive, semantic, utility)
+- [x] **COLOR-02**: Implement three-layer semantic color token architecture (primitive, semantic, utility)
 - [ ] **COLOR-03**: Add colored glow effects on interactive elements (buttons, cards, links)
 - [ ] **COLOR-04**: Create depth hierarchy system with shadows/elevation for visual layering
 
@@ -67,12 +67,12 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| A11Y-01 | Phase 1 | Pending |
-| A11Y-02 | Phase 1 | Pending |
+| A11Y-01 | Phase 1 | Complete |
+| A11Y-02 | Phase 1 | Complete |
 | A11Y-03 | Phase 4 | Pending |
-| A11Y-04 | Phase 1 | Pending |
+| A11Y-04 | Phase 1 | Complete |
 | COLOR-01 | Phase 3 | Pending |
-| COLOR-02 | Phase 1 | Pending |
+| COLOR-02 | Phase 1 | Complete |
 | COLOR-03 | Phase 3 | Pending |
 | COLOR-04 | Phase 2 | Pending |
 | COMP-01 | Phase 2 | Pending |
@@ -90,4 +90,4 @@ Which phases cover which requirements. Updated by create-roadmap.
 
 ---
 *Requirements defined: 2026-01-16*
-*Last updated: 2026-01-16 after roadmap creation*
+*Last updated: 2026-01-16 after Phase 1 completion*

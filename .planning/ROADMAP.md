@@ -27,8 +27,8 @@ This roadmap delivers a dark/moody visual refresh of the portfolio site in five 
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md - Implement three-layer semantic color token architecture
-- [ ] 01-02-PLAN.md - Add H1 sizing, focus indicators, and reduced motion support
+- [x] 01-01-PLAN.md - Implement three-layer semantic color token architecture
+- [x] 01-02-PLAN.md - Add H1 sizing, focus indicators, and reduced motion support
 
 ---
 
@@ -107,7 +107,7 @@ Plans:
 
 | Phase | Status | Completed |
 |-------|--------|-----------|
-| 1 - Foundation | Planned | -- |
+| 1 - Foundation | ✓ Complete | 2026-01-16 |
 | 2 - Surface Styling | Not started | -- |
 | 3 - Accent Colors | Not started | -- |
 | 4 - Typography + Polish | Not started | -- |

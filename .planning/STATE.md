@@ -6,7 +6,7 @@ See: .planning/PROJECT.md
 
 **Core value:** Impress hiring managers with a distinctive, professional portfolio that demonstrates fullstack capabilities without overwhelming them.
 
-**Current focus:** Phase 1 -- Foundation (Complete)
+**Current focus:** Phase 2 -- Surface Styling
 
 ## Current Position
 
@@ -54,4 +54,4 @@ Progress: ██░░░░░░░░ 20%
 
 Last session: 2026-01-16
 Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
-Resume file: .planning/phases/02-component-refinement/
+Resume file: .planning/phases/02-surface-styling/
