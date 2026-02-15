@@ -29,8 +29,7 @@ const ExperienceTimeline = () => {
 					className="mb-16 text-center"
 					variants={shouldReduceMotion ? reducedFadeVariants : fadeUpVariants}
 					initial="hidden"
-					whileInView="visible"
-					viewport={{ once: true, amount: 0.5 }}
+					animate="visible"
 				>
 					<h2 className="text-4xl md:text-5xl font-bold mb-4">
 						<span className="bg-gradient-primary bg-clip-text text-transparent">Work Experience</span>
@@ -50,8 +49,7 @@ const ExperienceTimeline = () => {
 						className="space-y-12"
 						variants={shouldReduceMotion ? reducedContainerVariants : staggerContainerVariants}
 						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true, amount: 0.2 }}
+						animate="visible"
 					>
 						{experiences.map((experience, index) => (
 							<motion.div
