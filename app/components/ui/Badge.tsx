@@ -29,16 +29,30 @@ const Badge = ({ children, variant = "default", size = "md", iconURL, iconAlt = 
 		lg: { width: 20, height: 20 },
 	};
 
-	// Variant classes
+	// Variant classes using semantic tokens
 	const variantClasses = {
+		// Default badge with subtle glassmorphism
 		default:
-			"bg-card-bg/60 text-text-secondary border border-white/10 backdrop-blur-sm hover:bg-card-bg/80 hover:text-text-primary hover:border-white/20 transition-all duration-200",
+			"bg-surface-elevated/60 text-content-secondary border border-border backdrop-blur-sm " +
+			"hover:bg-surface-elevated/80 hover:text-content-primary hover:border-border-strong " +
+			"transition-all duration-150",
+
+		// Primary badge with gradient and consistent glow
 		primary:
-			"bg-gradient-primary text-text-primary border border-primary-end/30 hover:shadow-md hover:shadow-primary-start/30 transition-all duration-200",
+			"bg-gradient-primary text-content-primary border border-accent-secondary/30 " +
+			"hover:shadow-md hover:shadow-accent-primary/30 transition-all duration-150",
+
+		// Secondary badge (cyan accent) with matching glow
 		secondary:
-			"bg-secondary/20 text-secondary border border-secondary/50 hover:bg-secondary/30 hover:border-secondary transition-all duration-200",
+			"bg-accent-tertiary/20 text-accent-tertiary border border-accent-tertiary/50 " +
+			"hover:bg-accent-tertiary/30 hover:border-accent-tertiary " +
+			"hover:shadow-md hover:shadow-accent-tertiary/30 transition-all duration-150",
+
+		// Success badge with matching glow
 		success:
-			"bg-success/20 text-success border border-success/50 hover:bg-success/30 hover:border-success transition-all duration-200",
+			"bg-status-success/20 text-status-success border border-status-success/50 " +
+			"hover:bg-status-success/30 hover:border-status-success " +
+			"hover:shadow-md hover:shadow-status-success/30 transition-all duration-150",
 	};
 
 	const baseClasses = `rounded-full inline-flex items-center justify-center font-medium select-none ${sizeClasses[size]} ${variantClasses[variant]} ${className}`;

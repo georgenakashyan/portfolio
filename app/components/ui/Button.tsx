@@ -46,10 +46,31 @@ const Button = ({
 
 	// Variant classes
 	const variantClasses = {
-		primary:
-			"bg-gradient-primary text-text-primary font-bold hover:shadow-lg hover:shadow-primary-start/50 hover:scale-105 transition-all duration-300",
-		secondary:
-			"bg-transparent border-2 border-secondary text-secondary font-semibold hover:bg-secondary hover:text-text-primary hover:shadow-lg hover:shadow-secondary/50 hover:scale-105 transition-all duration-300",
+		primary: [
+			// Base
+			"bg-gradient-primary text-content-primary font-bold",
+			// Hover (glow + subtle scale)
+			"hover:shadow-glow-primary hover:scale-[1.02]",
+			// Active/pressed (reduced scale, dimmed)
+			"active:scale-[0.98] active:brightness-90 active:shadow-glow-sm",
+			// Transition (150ms per research - not 300ms)
+			"transition-all duration-150",
+			// Disabled (prevent all hover/active effects)
+			"disabled:hover:shadow-none disabled:hover:scale-100 disabled:active:scale-100 disabled:active:brightness-100",
+		].join(" "),
+
+		secondary: [
+			// Base (cyan accent)
+			"bg-transparent border-2 border-accent-tertiary text-accent-tertiary font-semibold",
+			// Hover (fill + glow)
+			"hover:bg-accent-tertiary hover:text-content-primary hover:shadow-glow-tertiary hover:scale-[1.02]",
+			// Active/pressed
+			"active:scale-[0.98] active:brightness-90",
+			// Transition
+			"transition-all duration-150",
+			// Disabled
+			"disabled:hover:shadow-none disabled:hover:scale-100 disabled:hover:bg-transparent disabled:hover:text-accent-tertiary",
+		].join(" "),
 	};
 
 	// Base classes shared by all buttons
@@ -68,7 +89,7 @@ const Button = ({
 						variant === "primary"
 							? "[filter:invert(100%)_sepia(0%)_saturate(0%)_hue-rotate(321deg)_brightness(111%)_contrast(101%)]"
 							: variant === "secondary"
-							? "[filter:invert(74%)_sepia(61%)_saturate(2968%)_hue-rotate(146deg)_brightness(91%)_contrast(101%)] group-hover:[filter:brightness(0)_invert(1)] [transition:filter_300ms_ease-in-out]"
+							? "[filter:invert(74%)_sepia(61%)_saturate(2968%)_hue-rotate(146deg)_brightness(91%)_contrast(101%)] group-hover:[filter:brightness(0)_invert(1)] [transition:filter_150ms_ease-in-out]"
 							: ""
 					}`}
 					width={24}

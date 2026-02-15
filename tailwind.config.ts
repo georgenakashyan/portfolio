@@ -9,6 +9,39 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				// NEW: Semantic surface colors
+				surface: {
+					base: "var(--surface-base)",
+					elevated: "var(--surface-elevated)",
+					raised: "var(--surface-raised)",
+					sunken: "var(--surface-sunken)",
+					overlay: "var(--surface-overlay)",
+				},
+				// NEW: Semantic content/text colors
+				content: {
+					primary: "var(--text-primary)",
+					secondary: "var(--text-secondary)",
+					muted: "var(--text-muted)",
+				},
+				// NEW: Semantic accent colors
+				accent: {
+					primary: "var(--accent-primary)",
+					secondary: "var(--accent-secondary)",
+					tertiary: "var(--accent-tertiary)",
+				},
+				// NEW: Status colors
+				status: {
+					success: "var(--status-success)",
+					error: "var(--status-error)",
+				},
+				// NEW: Border colors
+				border: {
+					subtle: "var(--border-subtle)",
+					DEFAULT: "var(--border-default)",
+					strong: "var(--border-strong)",
+				},
+
+				// LEGACY: Keep existing tokens during migration
 				"background-start": "var(--background-start)",
 				"background-end": "var(--background-end)",
 				"primary-start": "var(--primary-start)",
@@ -20,8 +53,26 @@ export default {
 				success: "var(--success)",
 			},
 			backgroundImage: {
-				"gradient-bg": "linear-gradient(to bottom right, var(--background-start), var(--background-end))",
-				"gradient-primary": "linear-gradient(to right, var(--primary-start), var(--primary-end))",
+				// Use semantic gradient tokens
+				"gradient-bg":
+					"linear-gradient(to bottom right, var(--gradient-surface-from), var(--gradient-surface-to))",
+				"gradient-primary":
+					"linear-gradient(to right, var(--gradient-primary-from), var(--gradient-primary-to))",
+			},
+			boxShadow: {
+				// Existing depth shadows
+				raised: "var(--shadow-raised)",
+				overlay: "var(--shadow-overlay)",
+				// Glow size variants (use primary color)
+				"glow-sm": "var(--shadow-glow-sm)",
+				"glow-md": "var(--shadow-glow-md)",
+				"glow-lg": "var(--shadow-glow-lg)",
+				// Combined depth + glow for cards
+				"glow-card": "var(--shadow-glow-card)",
+				// Specific color glows (for buttons matching accent colors)
+				"glow-primary": "0 0 15px var(--glow-primary)",
+				"glow-secondary": "0 0 15px var(--glow-secondary)",
+				"glow-tertiary": "0 0 15px var(--glow-tertiary)",
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", "sans-serif"],
