@@ -20,16 +20,6 @@ const Footer = () => {
 					{/* Copyright Notice */}
 					<div className="text-text-secondary text-sm text-center md:text-right">
 						<p>&copy; {currentYear} George Nakashyan. All rights reserved.</p>
-						<p className="mt-1">
-							Built with{" "}
-							<span className="bg-gradient-primary bg-clip-text text-transparent font-semibold">
-								Next.js
-							</span>{" "}
-							&{" "}
-							<span className="bg-gradient-primary bg-clip-text text-transparent font-semibold">
-								TypeScript
-							</span>
-						</p>
 					</div>
 				</div>
 			</div>
